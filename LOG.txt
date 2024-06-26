@@ -1,0 +1,10 @@
+Starting utility...
+Unzipping sessions_2024061818191920240618-1924516-9bdwqn.zip
+Unzipping sessions_2024061818195520240618-1924516-1ck9a79.zip
+Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+Deleting temp files...
+Success!
+All generated graphs can be found in the 'output' folder.
