@@ -66,7 +66,7 @@ def lineGraphDotted(name, data):
 	ax.xaxis.set_major_locator(mdates.HourLocator(interval=INTERVAL))
 	
 	ax.set_ylabel('PM2.5 microgram per cubic meter')
-	ax.set_xlabel('Date - Time')
+	ax.set_xlabel('Date')
 
 	yRange = [0, max(max(y) + 30, 70)]
 	ax.set_ylim(yRange)
