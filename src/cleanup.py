@@ -78,11 +78,11 @@ for entry in entries: # I assume that every zip file has only one point of inter
 		for _ in range(9): # Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout (which is hardcoded)
 			next(fp)
 		
-		print("Reformatted", entry)
+		print("Reformatted " + entry)
 		data = hourlyAverage(fp) # !!! There are 2 entries in testing !!!
 
 		graphing.graph(entry, data)
-		print("Graphed", entry)
+		print("Graphed " + entry)
 		fp.close()
 
 print("Deleting temp files...")

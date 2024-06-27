@@ -7,7 +7,7 @@ OUTPUT_DIR = "./temp/"
 
 print("Starting utility...")
 for entry in listdir(ZIP_DIRECTORY):
-	print("Unzipping", entry)
+	print("Unzipping " + entry)
 
 	inputPath = ZIP_DIRECTORY + entry 
 
