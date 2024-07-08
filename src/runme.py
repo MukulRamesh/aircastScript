@@ -1,4 +1,6 @@
-# This file is what should be run to start the utility.
+# THIS FILE SHOULD NOT BE USED / ACCESSED
+
+# DEPRECIATED: Now using gui.py to render an interface.
 
 import sys
 import datetime
