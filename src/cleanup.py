@@ -2,18 +2,19 @@ import os, shutil
 from os import listdir
 import csv
 import datetime
+from pytimeparse import parse
 import graphing
 
 DIR = "./temp/"
 
-PERIOD = datetime.timedelta(days=14) # The last x amount of time that I am extracting
+# PERIOD = datetime.timedelta(days=14) # The last x amount of time that I am extracting
 
-TICKER = datetime.timedelta(hours=1) # How the data is delineated: average by x amount of time
+# TICKER = datetime.timedelta(hours=1) # How the data is delineated: average by x amount of time
 
 # Hard coded field names because the CSV file is badly formatted
 fieldNames = ['ObjectID', 'Session_Name', 'Timestamp', 'Latitude', 'Longitude', 'Fahrenheit', 'PM1', 'PM10', 'PM2.5', '3-RH']
 
-def hourlyAverage(fp):
+def hourlyAverage(fp, PERIOD, TICKER):
 	
 	file = csv.DictReader(fp, delimiter=',', quotechar="'", fieldnames=fieldNames)
 	lis = []
@@ -33,12 +34,17 @@ def hourlyAverage(fp):
 
 	curStamp = mostRecentStamp
 	i = -1
-	while curStamp > earliestStamp:
-		periodData.append(lis[i])
-		
-		i = i - 1
-		curStamp = lis[i][0]
 	
+	try:
+		while curStamp > earliestStamp:
+			periodData.append(lis[i])
+			
+			i = i - 1
+			curStamp = lis[i][0]
+	except IndexError:
+		missingDataTime = curStamp - earliestStamp
+		print("WARN: The PERIOD was larger than the dataset by " + str(missingDataTime) + ". Graphing the entire data set instead.")
+
 	periodData.reverse()
 	
 	averagedList = []
@@ -67,21 +73,29 @@ def hourlyAverage(fp):
 	return averagedList
 		
 
-def makeCleanGraph():
+def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr):
 	entries = listdir(DIR)
-	# print(entries)
+	period = datetime.timedelta(seconds=parse(periodLengthStr))
+	average_block = datetime.timedelta(seconds=parse(averageLengthStr))
+	
+	# These both need to be in a "number of hours" integer
+	interval = int(parse(intervalLengthStr) / 3600)  
+	dotInterval = int(parse(dotIntervalLengthStr) / 3600)
+	
+	
 
 	for entry in entries: # I assume that every zip file has only one point of interest: the .csv
 		if entry.endswith(".csv"):
 			fp = open(DIR + entry, 'r', newline='')
-			
-			for _ in range(9): # Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout (which is hardcoded)
+
+			# Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout (which is hardcoded)
+			for _ in range(9): 
 				next(fp)
 			
 			print("Reformatted " + entry)
-			data = hourlyAverage(fp) # !!! There are 2 entries in testing !!!
+			data = hourlyAverage(fp, period, average_block)
 
-			graphing.graph(entry, data)
+			graphing.graph(entry, data, interval, dotInterval)
 			print("Graphed " + entry)
 			fp.close()
 	

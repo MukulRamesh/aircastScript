@@ -3,6 +3,10 @@ import matplotlib.dates as mdates
 from matplotlib.pyplot import figure
 import itertools
 
+# lengths of time of values below ARE IN HOURS
+# interval = 24
+# dotInterval = 12
+
 def lineGraph(name, data):
 	fig = figure(figsize=(40, 12), dpi=300)
 	ax = plt.gca()
@@ -35,8 +39,7 @@ def lineGraph(name, data):
 	
 	plt.close(fig)
 
-def lineGraphDotted(name, data):
-	INTERVAL = 24
+def lineGraphDotted(name, data, interval, dotInterval):
 	
 	fig = figure(figsize=(15, 12), dpi=300)
 	ax = plt.gca()
@@ -63,7 +66,7 @@ def lineGraphDotted(name, data):
 
 
 	ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
-	ax.xaxis.set_major_locator(mdates.HourLocator(interval=INTERVAL))
+	ax.xaxis.set_major_locator(mdates.HourLocator(interval=interval))
 	
 	ax.set_ylabel('PM2.5 microgram per cubic meter')
 	ax.set_xlabel('Date')
@@ -76,7 +79,7 @@ def lineGraphDotted(name, data):
 	i = 0
 	for x1,y1 in zip(x,y):
 		color = next(markerColorIter)
-		if i % int(INTERVAL / 2) == 0:
+		if i % int(dotInterval) == 0:
 			plt.plot(x1,y1, marker='o', markersize=10, markerfacecolor=color, markeredgecolor=color) # plot dots
 			
 			textScale = ((yRange[1] - yRange[0]) / 100) * 3
@@ -89,7 +92,7 @@ def lineGraphDotted(name, data):
 	
 	plt.close(fig)
 
-def graph(name, data):
+def graph(name, data, interval, dotInterval):
 	# lineGraph(name, data)
-	lineGraphDotted(name, data)
+	lineGraphDotted(name, data, interval, dotInterval)
 

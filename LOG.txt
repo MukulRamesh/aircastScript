@@ -440,3 +440,167 @@
 2024-06-27 12:55:49.439393 : Deleting temp files...
 2024-06-27 12:55:49.443448 : Success!
 2024-06-27 12:55:49.443448 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:01:51.819078 : Starting utility...
+2024-07-11 14:01:51.820075 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:01:51.834127 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:01:51.864206 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:01:52.765173 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:01:52.770490 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:01:53.680987 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:01:53.685132 : Success!
+2024-07-11 14:01:53.685132 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:01:53.692274 : Deleting temp files...
+2024-07-11 14:02:20.627238 : Starting utility...
+2024-07-11 14:02:20.627238 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:02:20.644551 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:05:04.130963 : Starting utility...
+2024-07-11 14:05:04.131656 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:05:04.144953 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:05:04.156029 : unsupported type for timedelta seconds component: NoneType
+2024-07-11 14:06:56.769032 : Starting utility...
+2024-07-11 14:06:56.770056 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:06:56.783714 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:06:56.799171 : unsupported type for timedelta seconds component: NoneType
+2024-07-11 14:06:56.799171 : 1 Month
+2024-07-11 14:06:56.799171 :  
+2024-07-11 14:06:56.799171 : 1 Hour
+2024-07-11 14:06:56.799171 :  
+2024-07-11 14:06:56.799171 : 1 Day
+2024-07-11 14:06:56.799171 :  
+2024-07-11 14:06:56.799171 : 12 Hours
+2024-07-11 14:09:21.396656 : Starting utility...
+2024-07-11 14:09:21.396656 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:09:21.412774 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:09:21.438016 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:09:22.446383 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:09:22.457136 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:09:23.479092 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:09:23.479092 : Success!
+2024-07-11 14:09:23.479092 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:09:23.488062 : Deleting temp files...
+2024-07-11 14:10:13.110709 : Starting utility...
+2024-07-11 14:10:13.111750 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:10:13.124232 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:10:13.150273 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:10:13.307392 : list index out of range
+2024-07-11 14:10:13.307392 : 360 Days
+2024-07-11 14:10:13.307392 :  
+2024-07-11 14:10:13.307392 : 8 Hours
+2024-07-11 14:10:13.307392 :  
+2024-07-11 14:10:13.307392 : 14 Days
+2024-07-11 14:10:13.307392 :  
+2024-07-11 14:10:13.307392 : 7 Days
+2024-07-11 14:13:36.073024 : Starting utility...
+2024-07-11 14:13:36.074026 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:13:36.088470 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:13:36.118311 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:13:36.258471 : 360 Days
+2024-07-11 14:13:36.258471 :  
+2024-07-11 14:13:36.258471 : 8 Hours
+2024-07-11 14:13:36.258471 :  
+2024-07-11 14:13:36.258471 : 14 Days
+2024-07-11 14:13:36.258471 :  
+2024-07-11 14:13:36.258471 : 7 Days
+2024-07-11 14:14:39.644731 : Starting utility...
+2024-07-11 14:14:39.644731 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:14:39.656736 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:14:39.687029 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:14:39.838556 : 360 Days
+2024-07-11 14:14:39.838556 :  
+2024-07-11 14:14:39.838556 : 12 Hours
+2024-07-11 14:14:39.838556 :  
+2024-07-11 14:14:39.838556 : 12 Hours
+2024-07-11 14:14:39.838556 :  
+2024-07-11 14:14:39.838556 : 7 Days
+2024-07-11 14:14:59.843783 : Starting utility...
+2024-07-11 14:14:59.844688 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:14:59.858698 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:14:59.882263 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:15:00.038632 : 360 Days
+2024-07-11 14:15:00.038632 :  
+2024-07-11 14:15:00.038632 : 8 Hours
+2024-07-11 14:15:00.038632 :  
+2024-07-11 14:15:00.038632 : 6 Hours
+2024-07-11 14:15:00.038632 :  
+2024-07-11 14:15:00.038632 : 12 Hours
+2024-07-11 14:15:00.038632 : <built-in method with_traceback of IndexError object at 0x000001F719596DA0>
+2024-07-11 14:17:22.068724 : Starting utility...
+2024-07-11 14:17:22.069725 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:17:22.081814 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:17:22.107492 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:17:22.259586 : 360 Days
+2024-07-11 14:17:22.259586 :  
+2024-07-11 14:17:22.259586 : 8 Hours
+2024-07-11 14:17:22.259586 :  
+2024-07-11 14:17:22.259586 : 12 Hours
+2024-07-11 14:17:22.259586 :  
+2024-07-11 14:17:22.259586 : 14 Days
+2024-07-11 14:19:12.839678 : Starting utility...
+2024-07-11 14:19:12.840675 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:19:12.858540 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:19:12.880098 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:19:13.031085 : 360 Days
+2024-07-11 14:19:13.031085 :  
+2024-07-11 14:19:13.031085 : 6 Hours
+2024-07-11 14:19:13.031085 :  
+2024-07-11 14:19:13.031085 : 1 Day
+2024-07-11 14:19:13.031085 :  
+2024-07-11 14:19:13.031085 : 7 Days
+2024-07-11 14:21:00.796012 : Starting utility...
+2024-07-11 14:21:00.796483 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:21:00.814740 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:21:00.839564 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:21:01.000401 : 360 Days
+2024-07-11 14:21:01.000401 :  
+2024-07-11 14:21:01.000401 : 8 Hours
+2024-07-11 14:21:01.000401 :  
+2024-07-11 14:21:01.000401 : 12 Hours
+2024-07-11 14:21:01.000401 :  
+2024-07-11 14:21:01.000401 : 12 Hours
+2024-07-11 14:24:28.257098 : Starting utility...
+2024-07-11 14:24:28.257536 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:24:28.272680 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:24:28.302526 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:24:28.451663 : The PERIOD was larger than the data set. Graphing the entire data set instead.
+2024-07-11 14:24:29.439471 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:24:29.441488 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:24:29.641616 : The PERIOD was larger than the data set. Graphing the entire data set instead.
+2024-07-11 14:24:30.534053 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:24:30.534053 : Success!
+2024-07-11 14:24:30.534053 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:24:30.546966 : Deleting temp files...
+2024-07-11 14:33:02.426899 : Starting utility...
+2024-07-11 14:33:02.426899 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:33:02.442865 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:33:02.466932 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:33:02.625347 : WARN: The PERIOD was larger than the data set. Graphing the entire data set instead.
+2024-07-11 14:33:03.275768 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:33:03.283830 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:33:03.448778 : WARN: The PERIOD was larger than the data set. Graphing the entire data set instead.
+2024-07-11 14:33:04.143728 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:33:04.143728 : Success!
+2024-07-11 14:33:04.143728 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:33:04.151546 : Deleting temp files...
+2024-07-11 14:36:41.344517 : Starting utility...
+2024-07-11 14:36:41.344517 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:36:41.361903 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:36:41.381483 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:36:41.545131 : 360 Days
+2024-07-11 14:36:41.545131 :  
+2024-07-11 14:36:41.545131 : 1 Hour
+2024-07-11 14:36:41.545131 :  
+2024-07-11 14:36:41.545131 : 1 Day
+2024-07-11 14:36:41.545131 :  
+2024-07-11 14:36:41.545131 : 12 Hours
+2024-07-11 14:38:03.830420 : Starting utility...
+2024-07-11 14:38:03.831614 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-11 14:38:03.843189 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-11 14:38:03.875358 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:38:04.065681 : WARN: The PERIOD was larger than the data set by 326 days, 1:21:13. Graphing the entire data set instead.
+2024-07-11 14:38:04.958700 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-11 14:38:04.965432 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:38:05.145348 : WARN: The PERIOD was larger than the data set by 321 days, 1:49:21. Graphing the entire data set instead.
+2024-07-11 14:38:06.068208 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-11 14:38:06.068208 : Success!
+2024-07-11 14:38:06.075302 : All generated graphs can be found in the 'output' folder.
+2024-07-11 14:38:06.085543 : Deleting temp files...
