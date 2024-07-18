@@ -4,6 +4,7 @@ import csv
 import datetime
 from pytimeparse import parse
 import graphing
+import publicdata
 
 DIR = "./temp/"
 
@@ -15,7 +16,7 @@ DIR = "./temp/"
 fieldNames = ['ObjectID', 'Session_Name', 'Timestamp', 'Latitude', 'Longitude', 'Fahrenheit', 'PM1', 'PM10', 'PM2.5', '3-RH']
 
 def hourlyAverage(fp, PERIOD, TICKER):
-	
+
 	file = csv.DictReader(fp, delimiter=',', quotechar="'", fieldnames=fieldNames)
 	lis = []
 
@@ -34,11 +35,11 @@ def hourlyAverage(fp, PERIOD, TICKER):
 
 	curStamp = mostRecentStamp
 	i = -1
-	
+
 	try:
 		while curStamp > earliestStamp:
 			periodData.append(lis[i])
-			
+
 			i = i - 1
 			curStamp = lis[i][0]
 	except IndexError:
@@ -46,59 +47,59 @@ def hourlyAverage(fp, PERIOD, TICKER):
 		print("WARN: The PERIOD was larger than the dataset by " + str(missingDataTime) + ". Graphing the entire data set instead.")
 
 	periodData.reverse()
-	
+
 	averagedList = []
 	i = 0
 	ppmSum = 0
 	obsCount = 0
 	while i < len(periodData):
-		
+
 		markedStamp = periodData[i][0]
 		endOfTicker = periodData[i][0] + TICKER
 
 		curStamp = markedStamp
 		while curStamp < endOfTicker and i < len(periodData):
 			curStamp = periodData[i][0]
-			
+
 			if (periodData[i][1] != ''):
 				ppmSum += float(periodData[i][1])
 				obsCount += 1
 
 			i = i + 1
-		
+
 
 		averagePPM = ppmSum / obsCount
 		averagedList.append((markedStamp, averagePPM))
-	
-	return averagedList
-		
 
-def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr):
+	return averagedList
+
+
+def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle):
 	entries = listdir(DIR)
 	period = datetime.timedelta(seconds=parse(periodLengthStr))
 	average_block = datetime.timedelta(seconds=parse(averageLengthStr))
-	
+
 	# These both need to be in a "number of hours" integer
-	interval = int(parse(intervalLengthStr) / 3600)  
+	interval = int(parse(intervalLengthStr) / 3600)
 	dotInterval = int(parse(dotIntervalLengthStr) / 3600)
-	
-	
+
+	publicTime, publicVal = publicdata.getOpenAQ("hour", str(datetime.date.today()), str(datetime.date.today() - period))
 
 	for entry in entries: # I assume that every zip file has only one point of interest: the .csv
 		if entry.endswith(".csv"):
 			fp = open(DIR + entry, 'r', newline='')
 
 			# Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout (which is hardcoded)
-			for _ in range(9): 
+			for _ in range(9):
 				next(fp)
-			
+
 			print("Reformatted " + entry)
 			data = hourlyAverage(fp, period, average_block)
 
-			graphing.graph(entry, data, interval, dotInterval)
+			graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle)
 			print("Graphed " + entry)
 			fp.close()
-	
+
 	print("Success!")
 	print("All generated graphs can be found in the 'output' folder.")
 

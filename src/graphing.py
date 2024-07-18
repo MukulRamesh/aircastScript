@@ -13,12 +13,12 @@ def lineGraph(name, data):
 
 	x = [d[0] for d in data]
 	y = [d[1] for d in data]
-	
+
 
 
 	ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d - %H:00'))
 	ax.xaxis.set_major_locator(mdates.HourLocator(interval=6))
-	
+
 	ax.set_ylabel('PM2.5 microgram per cubic meter')
 	ax.set_xlabel('Date - Time')
 
@@ -36,17 +36,22 @@ def lineGraph(name, data):
 	plt.plot(x,y, linewidth=5.0)
 	plt.gcf().autofmt_xdate()
 	plt.savefig('./output/' + name + '.png', bbox_inches='tight')
-	
+
 	plt.close(fig)
 
-def lineGraphDotted(name, data, interval, dotInterval):
-	
+def lineGraphDotted(name, data, interval, dotInterval, includeTitle):
+
 	fig = figure(figsize=(15, 12), dpi=300)
+
 	ax = plt.gca()
+
+	if includeTitle:
+		goodName = name.split("_")[0]
+		fig.suptitle(goodName)
 
 	x = [d[0] for d in data]
 	y = [d[1] for d in data]
-	
+
 	markerColorList = []
 	for val in y:
 		if val > 301:
@@ -67,13 +72,13 @@ def lineGraphDotted(name, data, interval, dotInterval):
 
 	ax.xaxis.set_major_formatter(mdates.DateFormatter('%m/%d'))
 	ax.xaxis.set_major_locator(mdates.HourLocator(interval=interval))
-	
+
 	ax.set_ylabel('PM2.5 microgram per cubic meter')
 	ax.set_xlabel('Date')
 
 	yRange = [0, max(max(y) + 30, 70)]
 	ax.set_ylim(yRange)
-	
+
 	plt.plot(x,y, linewidth=2.0, color="grey") # plot line
 
 	i = 0
@@ -81,18 +86,18 @@ def lineGraphDotted(name, data, interval, dotInterval):
 		color = next(markerColorIter)
 		if i % int(dotInterval) == 0:
 			plt.plot(x1,y1, marker='o', markersize=10, markerfacecolor=color, markeredgecolor=color) # plot dots
-			
+
 			textScale = ((yRange[1] - yRange[0]) / 100) * 3
 			ax.text(x1, y1+textScale, "%d" %y1, ha="center") # write text value above dots
 		i += 1
-	
-	
+
+
 	plt.gcf().autofmt_xdate()
 	plt.savefig('./output/' + name + '.png', bbox_inches='tight')
-	
+
 	plt.close(fig)
 
-def graph(name, data, interval, dotInterval):
-	# lineGraph(name, data)
-	lineGraphDotted(name, data, interval, dotInterval)
+# def graph(name, data, interval, dotInterval, includeTitle):
+# 	# lineGraph(name, data)
+# 	lineGraphDotted(name, data, interval, dotInterval, includeTitle)
 

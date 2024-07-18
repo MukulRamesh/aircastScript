@@ -13,16 +13,16 @@ import sys
 import datetime
 
 class Logger(object):
-	def __init__(self):
-		self.terminal = sys.stdout
-		self.log = open("log.txt", "a")
+    def __init__(self):
+        self.terminal = sys.stdout
+        self.log = open("log.txt", "a")
 
-	def write(self, message):
-		now = datetime.datetime.now()
-		timedMessage = str(now) + " : " + message
-		if (message != '\n'):
-			self.log.write(timedMessage + '\n')  
-		self.terminal.write(message)
+    def write(self, message):
+        now = datetime.datetime.now()
+        timedMessage = str(now) + " : " + message
+        if (message != '\n'):
+            self.log.write(timedMessage + '\n')
+        self.terminal.write(message)
 
 stdOut = sys.stdout
 sys.stdout = Logger()
@@ -66,6 +66,18 @@ dotIntervalLengthOptions = ["1 Hour","6 Hours","12 Hours","1 Day", "7 Days", "14
 dotIntervalLengthText = tk.StringVar(root); dotIntervalLengthText.set(dotIntervalLengthOptions[2])
 dotIntervalLengthDropDown = tk.OptionMenu(root, dotIntervalLengthText, *dotIntervalLengthOptions).pack()
 
+
+
+titleTKVar = tk.BooleanVar()
+
+ttk.Checkbutton(root,
+                text='Title Inclusion (Should I title each graph?)',
+                variable=titleTKVar,
+                onvalue=True,
+                offvalue=False).pack()
+
+
+
 fullFilePaths = []
 
 def updateLabelText(text):
@@ -80,15 +92,20 @@ def drop(event):
     # This function is called, when stuff is dropped into a widget
     if (len(fullFilePaths) == 0):
         clearLabelText()
-    
+
     paths = str(event.data)
 
-    for path in paths.split("} {"):
+    if "} {" in paths:
+        splitPath = paths.split("} {")
+    else:
+        splitPath = paths.split(" ")
+
+    for path in splitPath:
         path = path.removeprefix("{").removesuffix("}")
 
         pathSplit = path.split('/')
 
-        fileName = pathSplit[-1]
+        fileName = pathSplit[-1].strip()
 
         if (os.path.isfile(path)):
             fullFilePaths.append(path)
@@ -108,12 +125,13 @@ def runUtility():
         averageLengthStr = averageLengthText.get()
         intervalLengthStr = intervalLengthText.get()
         dotIntervalLengthStr = dotIntervalLengthText.get()
+        includeTitle = titleTKVar.get()
         updateLabelText("Grabbed configured options...")
-    
+
         try:
             unzip.unzipList(fullFilePaths)
             updateLabelText("Unzipped files...")
-            cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr)
+            cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
             updateLabelText("Generated graphs...")
             unzip.deleteTempFiles()
             updateLabelText("Deleted temporary files...")

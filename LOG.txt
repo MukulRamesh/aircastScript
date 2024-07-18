@@ -604,3 +604,216 @@
 2024-07-11 14:38:06.068208 : Success!
 2024-07-11 14:38:06.075302 : All generated graphs can be found in the 'output' folder.
 2024-07-11 14:38:06.085543 : Deleting temp files...
+2024-07-15 14:40:31.198614 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:40:40.797371 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:40:52.368082 : Starting utility...
+2024-07-15 14:40:52.368582 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:40:52.387618 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:40:52.408600 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:40:52.688109 : 2 Weeks
+2024-07-15 14:40:52.688109 :  
+2024-07-15 14:40:52.688109 : 1 Hour
+2024-07-15 14:40:52.688109 :  
+2024-07-15 14:40:52.688109 : 1 Day
+2024-07-15 14:40:52.688109 :  
+2024-07-15 14:40:52.688109 : 12 Hours
+2024-07-15 14:40:52.689078 : Traceback (most recent call last):
+
+2024-07-15 14:40:52.689610 : 
+2024-07-15 14:40:52.689610 :   File "D:\Isles\airCast\src\gui.py", line 116, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr)
+
+2024-07-15 14:40:52.690085 : 
+2024-07-15 14:40:52.690085 :   File "D:\Isles\airCast\src\cleanup.py", line 99, in makeCleanGraph
+    graphing.graph(entry, data, interval, dotInterval)
+
+2024-07-15 14:40:52.690577 : 
+2024-07-15 14:40:52.690577 :   File "D:\Isles\airCast\src\graphing.py", line 100, in graph
+    lineGraphDotted(name, data, interval, dotInterval)
+
+2024-07-15 14:40:52.690577 : 
+2024-07-15 14:40:52.690577 :   File "D:\Isles\airCast\src\graphing.py", line 48, in lineGraphDotted
+    ax.title(name)
+
+2024-07-15 14:40:52.691077 : 
+2024-07-15 14:40:52.691077 : TypeError: 'Text' object is not callable
+
+2024-07-15 14:40:52.691584 : 
+2024-07-15 14:41:10.740703 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:41:16.280109 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:41:22.613540 : Ignoring because not a file: sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:41:27.749756 : Starting utility...
+2024-07-15 14:41:27.750282 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:41:27.771757 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:41:27.794765 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:41:28.109796 : 2 Weeks
+2024-07-15 14:41:28.109796 :  
+2024-07-15 14:41:28.109796 : 1 Hour
+2024-07-15 14:41:28.109796 :  
+2024-07-15 14:41:28.109796 : 1 Day
+2024-07-15 14:41:28.109796 :  
+2024-07-15 14:41:28.109796 : 12 Hours
+2024-07-15 14:41:28.112789 : Traceback (most recent call last):
+
+2024-07-15 14:41:28.113284 : 
+2024-07-15 14:41:28.113284 :   File "D:\Isles\airCast\src\gui.py", line 116, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr)
+
+2024-07-15 14:41:28.113762 : 
+2024-07-15 14:41:28.113762 :   File "D:\Isles\airCast\src\cleanup.py", line 99, in makeCleanGraph
+    graphing.graph(entry, data, interval, dotInterval)
+
+2024-07-15 14:41:28.113762 : 
+2024-07-15 14:41:28.113762 :   File "D:\Isles\airCast\src\graphing.py", line 100, in graph
+    lineGraphDotted(name, data, interval, dotInterval)
+
+2024-07-15 14:41:28.114263 : 
+2024-07-15 14:41:28.114263 :   File "D:\Isles\airCast\src\graphing.py", line 93, in lineGraphDotted
+    plt.gcf().autofmt_xdate()
+
+2024-07-15 14:41:28.114762 : 
+2024-07-15 14:41:28.114762 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\figure.py", line 199, in autofmt_xdate
+    for label in self.axes[0].get_xticklabels(which=which):
+
+2024-07-15 14:41:28.115260 : 
+2024-07-15 14:41:28.115260 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axes\_base.py", line 74, in wrapper
+    return get_method(self)(*args, **kwargs)
+
+2024-07-15 14:41:28.115260 : 
+2024-07-15 14:41:28.115260 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axis.py", line 1495, in get_ticklabels
+    return self.get_majorticklabels()
+
+2024-07-15 14:41:28.115755 : 
+2024-07-15 14:41:28.115755 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axis.py", line 1459, in get_majorticklabels
+    self._update_ticks()
+
+2024-07-15 14:41:28.115755 : 
+2024-07-15 14:41:28.115755 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axis.py", line 1299, in _update_ticks
+    major_locs = self.get_majorticklocs()
+
+2024-07-15 14:41:28.116256 : 
+2024-07-15 14:41:28.116256 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axis.py", line 1530, in get_majorticklocs
+    return self.major.locator()
+
+2024-07-15 14:41:28.116256 : 
+2024-07-15 14:41:28.116256 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\dates.py", line 1143, in __call__
+    dmin, dmax = self.viewlim_to_dt()
+
+2024-07-15 14:41:28.116762 : 
+2024-07-15 14:41:28.116762 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\dates.py", line 1096, in viewlim_to_dt
+    vmin, vmax = self.axis.get_view_interval()
+
+2024-07-15 14:41:28.116762 : 
+2024-07-15 14:41:28.116762 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axis.py", line 2301, in getter
+    return getattr(getattr(self.axes, lim_name), attr_name)
+
+2024-07-15 14:41:28.117265 : 
+2024-07-15 14:41:28.117265 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axes\_base.py", line 851, in viewLim
+    self._unstale_viewLim()
+
+2024-07-15 14:41:28.117265 : 
+2024-07-15 14:41:28.117265 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axes\_base.py", line 846, in _unstale_viewLim
+    self.autoscale_view(**{f"scale{name}": scale
+
+2024-07-15 14:41:28.117763 : 
+2024-07-15 14:41:28.117763 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axes\_base.py", line 2894, in autoscale_view
+    x_stickies = np.sort(np.concatenate([
+
+2024-07-15 14:41:28.117763 : 
+2024-07-15 14:41:28.117763 :   File "D:\Isles\airCast\venv\lib\site-packages\matplotlib\axes\_base.py", line 2895, in <listcomp>
+    artist.sticky_edges.x
+
+2024-07-15 14:41:28.117763 : 
+2024-07-15 14:41:28.118256 : AttributeError: 'str' object has no attribute 'sticky_edges'
+
+2024-07-15 14:41:28.118256 : 
+2024-07-15 14:42:03.297682 : Starting utility...
+2024-07-15 14:42:03.298175 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:42:03.316176 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:42:04.122215 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:42:04.122806 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:42:04.976347 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:42:04.976815 : Success!
+2024-07-15 14:42:04.976815 : All generated graphs can be found in the 'output' folder.
+2024-07-15 14:42:04.982314 : Deleting temp files...
+2024-07-15 14:43:24.697226 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:44:06.974891 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:44:10.772915 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:44:29.501752 : Ignoring because not a file: sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:44:33.811017 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:44:36.112500 : Ignoring because not a file: sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:45:19.999470 : D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:45:19.999986 : Ignoring because not a file: sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:47:58.242161 : Ignoring because not a file: sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:48:18.838428 : D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:48:28.610148 : Starting utility...
+2024-07-15 14:48:28.610649 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:48:28.628148 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:48:28.651150 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:48:29.516821 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:48:29.517322 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:48:30.378332 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:48:30.378823 : Success!
+2024-07-15 14:48:30.378823 : All generated graphs can be found in the 'output' folder.
+2024-07-15 14:48:30.385331 : Deleting temp files...
+2024-07-15 14:56:47.049092 : Starting utility...
+2024-07-15 14:56:47.049092 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:56:47.068090 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:56:47.090096 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:56:47.940623 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:56:47.941095 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:56:48.836585 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:56:48.837092 : Success!
+2024-07-15 14:56:48.837596 : All generated graphs can be found in the 'output' folder.
+2024-07-15 14:56:48.843090 : Deleting temp files...
+2024-07-15 14:57:18.082053 : Starting utility...
+2024-07-15 14:57:18.082554 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 14:57:18.103043 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 14:57:18.130042 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:57:18.935812 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 14:57:18.936372 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:57:19.767812 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 14:57:19.767812 : Success!
+2024-07-15 14:57:19.768312 : All generated graphs can be found in the 'output' folder.
+2024-07-15 14:57:19.774812 : Deleting temp files...
+2024-07-15 15:10:23.124540 : Starting utility...
+2024-07-15 15:10:23.124540 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 15:10:23.146082 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 15:10:23.574586 : OpenAQ entries documented: 336
+2024-07-15 15:10:23.576085 : 2 Weeks
+2024-07-15 15:10:23.576085 :  
+2024-07-15 15:10:23.576085 : 1 Hour
+2024-07-15 15:10:23.576085 :  
+2024-07-15 15:10:23.576085 : 1 Day
+2024-07-15 15:10:23.576085 :  
+2024-07-15 15:10:23.576085 : 12 Hours
+2024-07-15 15:10:23.577087 : Traceback (most recent call last):
+
+2024-07-15 15:10:23.577087 : 
+2024-07-15 15:10:23.577087 :   File "D:\Isles\airCast\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-15 15:10:23.577594 : 
+2024-07-15 15:10:23.577594 :   File "D:\Isles\airCast\src\cleanup.py", line 86, in makeCleanGraph
+    publicTime, publicVal = publicdata.getOpenAQ("hour", str(datetime.date.today()), str(datetime.date.today() - period))
+
+2024-07-15 15:10:23.578087 : 
+2024-07-15 15:10:23.578087 :   File "D:\Isles\airCast\src\publicdata.py", line 40, in getOpenAQ
+    print(f"OpenAQ API query found entries: " + res.json()["meta"]["found"]) #if 0, then warn and abort
+
+2024-07-15 15:10:23.578594 : 
+2024-07-15 15:10:23.578594 : TypeError: can only concatenate str (not "int") to str
+
+2024-07-15 15:10:23.578594 : 
+2024-07-15 15:11:07.836442 : Starting utility...
+2024-07-15 15:11:07.836942 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-15 15:11:07.855971 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-15 15:11:08.040940 : OpenAQ entries documented: 336
+2024-07-15 15:11:08.042476 : OpenAQ API query found entries: 335
+2024-07-15 15:11:08.042974 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 15:11:08.897493 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-15 15:11:08.897992 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 15:11:09.817993 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-15 15:11:09.817993 : Success!
+2024-07-15 15:11:09.818493 : All generated graphs can be found in the 'output' folder.
+2024-07-15 15:11:09.825000 : Deleting temp files...
