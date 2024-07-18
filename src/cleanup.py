@@ -89,7 +89,7 @@ def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotInte
 		if entry.endswith(".csv"):
 			fp = open(DIR + entry, 'r', newline='')
 
-			# Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout (which is hardcoded)
+			# Skip the first 9 lines. First 8 describe the measurements, 9th describes the layout  (which is hardcoded)
 			for _ in range(9):
 				next(fp)
 
