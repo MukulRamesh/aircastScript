@@ -71,7 +71,11 @@ def hourlyAverage(fp, PERIOD, TICKER):
 		averagePPM = ppmSum / obsCount
 		averagedList.append((markedStamp, averagePPM))
 
-	return averagedList
+
+
+	publicList = publicdata.getOpenAQ("day", str(mostRecentStamp), str(earliestStamp))
+
+	return averagedList, publicList
 
 
 def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle):
@@ -83,7 +87,7 @@ def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotInte
 	interval = int(parse(intervalLengthStr) / 3600)
 	dotInterval = int(parse(dotIntervalLengthStr) / 3600)
 
-	publicTime, publicVal = publicdata.getOpenAQ("hour", str(datetime.date.today()), str(datetime.date.today() - period))
+	
 
 	for entry in entries: # I assume that every zip file has only one point of interest: the .csv
 		if entry.endswith(".csv"):
@@ -94,9 +98,9 @@ def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotInte
 				next(fp)
 
 			print("Reformatted " + entry)
-			data = hourlyAverage(fp, period, average_block)
+			data, publicList = hourlyAverage(fp, period, average_block)
 
-			graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle)
+			graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
 			print("Graphed " + entry)
 			fp.close()
 

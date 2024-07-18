@@ -817,3 +817,943 @@
 2024-07-15 15:11:09.817993 : Success!
 2024-07-15 15:11:09.818493 : All generated graphs can be found in the 'output' folder.
 2024-07-15 15:11:09.825000 : Deleting temp files...
+2024-07-18 09:52:19.365822 : Starting utility...
+2024-07-18 09:52:19.365822 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 09:52:19.396015 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 09:52:19.665883 : OpenAQ entries documented: 336
+2024-07-18 09:52:19.665883 : OpenAQ API query found entries: 334
+2024-07-18 09:52:19.675974 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 09:52:20.846014 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 09:52:20.846014 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 09:52:21.865851 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 09:52:21.865851 : Success!
+2024-07-18 09:52:21.865851 : All generated graphs can be found in the 'output' folder.
+2024-07-18 09:52:21.875915 : Deleting temp files...
+2024-07-18 09:57:01.497294 : Starting utility...
+2024-07-18 09:57:01.497294 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 09:57:01.507432 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 09:57:01.657293 : OpenAQ entries documented: 336
+2024-07-18 09:57:01.657293 : OpenAQ API query found entries: 334
+2024-07-18 09:57:01.667459 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 09:57:02.149960 : 2 Weeks
+2024-07-18 09:57:02.149960 :  
+2024-07-18 09:57:02.149960 : 1 Hour
+2024-07-18 09:57:02.149960 :  
+2024-07-18 09:57:02.149960 : 1 Day
+2024-07-18 09:57:02.149960 :  
+2024-07-18 09:57:02.149960 : 12 Hours
+2024-07-18 09:57:02.168291 : Traceback (most recent call last):
+
+2024-07-18 09:57:02.168291 : 
+2024-07-18 09:57:02.168291 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 09:57:02.168291 : 
+2024-07-18 09:57:02.168291 :   File "C:\Isles\air quality\src\cleanup.py", line 99, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicTime, publicVal)
+
+2024-07-18 09:57:02.168291 : 
+2024-07-18 09:57:02.168291 :   File "C:\Isles\air quality\src\graphing.py", line 89, in lineGraphDotted
+    plt.plot(x1,y1, marker='o', markersize=10, markerfacecolor=color, markeredgecolor=color) # plot dots
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.168291 : 
+2024-07-18 09:57:02.168291 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 09:57:02.168291 : 
+2024-07-18 09:57:02.168291 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1779, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.173947 : 
+2024-07-18 09:57:02.173947 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 296, in __call__
+    yield from self._plot_args(
+               ^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.173947 : 
+2024-07-18 09:57:02.173947 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 481, in _plot_args
+    axes.xaxis.update_units(x)
+
+2024-07-18 09:57:02.175200 : 
+2024-07-18 09:57:02.175200 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1752, in update_units
+    self._update_axisinfo()
+
+2024-07-18 09:57:02.175200 : 
+2024-07-18 09:57:02.175200 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1764, in _update_axisinfo
+    info = self.converter.axisinfo(self.units, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.177127 : 
+2024-07-18 09:57:02.177127 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1823, in axisinfo
+    return self._get_converter().axisinfo(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.177127 : 
+2024-07-18 09:57:02.177127 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1740, in axisinfo
+    majloc = AutoDateLocator(tz=tz,
+             ^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.178121 : 
+2024-07-18 09:57:02.178121 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1274, in __init__
+    super().__init__(tz=tz)
+
+2024-07-18 09:57:02.179130 : 
+2024-07-18 09:57:02.179130 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1073, in __init__
+    self.tz = _get_tzinfo(tz)
+              ^^^^^^^^^^^^^^^
+
+2024-07-18 09:57:02.179130 : 
+2024-07-18 09:57:02.179130 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 224, in _get_tzinfo
+    raise TypeError(f"tz must be string or tzinfo subclass, not {tz!r}.")
+
+2024-07-18 09:57:02.179130 : 
+2024-07-18 09:57:02.180115 : TypeError: tz must be string or tzinfo subclass, not <matplotlib.category.UnitData object at 0x0000017A0DB8A4E0>.
+
+2024-07-18 09:57:02.180115 : 
+2024-07-18 10:04:32.499600 : Starting utility...
+2024-07-18 10:04:32.499600 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:04:32.548686 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:04:32.681425 : OpenAQ entries documented: 336
+2024-07-18 10:04:32.681425 : OpenAQ API query found entries: 334
+2024-07-18 10:04:32.689560 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:04:33.019606 : 2024-06-04 14:20:14
+2024-07-18 10:04:33.019606 : 2024-07-04T05:00:00Z
+2024-07-18 10:04:33.119446 : 2 Weeks
+2024-07-18 10:04:33.119446 :  
+2024-07-18 10:04:33.119446 : 1 Hour
+2024-07-18 10:04:33.119446 :  
+2024-07-18 10:04:33.119446 : 1 Day
+2024-07-18 10:04:33.119446 :  
+2024-07-18 10:04:33.119446 : 12 Hours
+2024-07-18 10:04:33.119446 : Traceback (most recent call last):
+
+2024-07-18 10:04:33.119446 : 
+2024-07-18 10:04:33.119446 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:04:33.119446 : 
+2024-07-18 10:04:33.119446 :   File "C:\Isles\air quality\src\cleanup.py", line 99, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicTime, publicVal)
+
+2024-07-18 10:04:33.119446 : 
+2024-07-18 10:04:33.119446 :   File "C:\Isles\air quality\src\graphing.py", line 92, in lineGraphDotted
+    plt.plot(x1,y1, marker='o', markersize=10, markerfacecolor=color, markeredgecolor=color) # plot dots
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.126713 : 
+2024-07-18 10:04:33.126713 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:04:33.126713 : 
+2024-07-18 10:04:33.126713 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1779, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.127719 : 
+2024-07-18 10:04:33.127719 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 296, in __call__
+    yield from self._plot_args(
+               ^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.127719 : 
+2024-07-18 10:04:33.127719 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 481, in _plot_args
+    axes.xaxis.update_units(x)
+
+2024-07-18 10:04:33.128716 : 
+2024-07-18 10:04:33.128716 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1752, in update_units
+    self._update_axisinfo()
+
+2024-07-18 10:04:33.128716 : 
+2024-07-18 10:04:33.128716 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1764, in _update_axisinfo
+    info = self.converter.axisinfo(self.units, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.129771 : 
+2024-07-18 10:04:33.129771 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1823, in axisinfo
+    return self._get_converter().axisinfo(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.129771 : 
+2024-07-18 10:04:33.129771 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1740, in axisinfo
+    majloc = AutoDateLocator(tz=tz,
+             ^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.130792 : 
+2024-07-18 10:04:33.130792 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1274, in __init__
+    super().__init__(tz=tz)
+
+2024-07-18 10:04:33.130792 : 
+2024-07-18 10:04:33.130792 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1073, in __init__
+    self.tz = _get_tzinfo(tz)
+              ^^^^^^^^^^^^^^^
+
+2024-07-18 10:04:33.132215 : 
+2024-07-18 10:04:33.132215 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 224, in _get_tzinfo
+    raise TypeError(f"tz must be string or tzinfo subclass, not {tz!r}.")
+
+2024-07-18 10:04:33.132215 : 
+2024-07-18 10:04:33.132215 : TypeError: tz must be string or tzinfo subclass, not <matplotlib.category.UnitData object at 0x000001EFAE4BAA50>.
+
+2024-07-18 10:04:33.132215 : 
+2024-07-18 10:06:33.630111 : Starting utility...
+2024-07-18 10:06:33.630111 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:06:33.647483 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:06:33.790136 : OpenAQ entries documented: 336
+2024-07-18 10:06:33.790136 : OpenAQ API query found entries: 334
+2024-07-18 10:06:33.814211 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:06:34.839809 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:06:34.850154 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:06:35.932366 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:06:35.932366 : Success!
+2024-07-18 10:06:35.932366 : All generated graphs can be found in the 'output' folder.
+2024-07-18 10:06:35.940526 : Deleting temp files...
+2024-07-18 10:11:41.721385 : Starting utility...
+2024-07-18 10:11:41.721385 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:11:41.741340 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:11:41.771584 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:11:42.061497 : 2 Weeks
+2024-07-18 10:11:42.061497 :  
+2024-07-18 10:11:42.061497 : 1 Hour
+2024-07-18 10:11:42.061497 :  
+2024-07-18 10:11:42.061497 : 1 Day
+2024-07-18 10:11:42.061497 :  
+2024-07-18 10:11:42.061497 : 12 Hours
+2024-07-18 10:11:42.065037 : Traceback (most recent call last):
+
+2024-07-18 10:11:42.065037 : 
+2024-07-18 10:11:42.065037 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:11:42.065037 : 
+2024-07-18 10:11:42.065037 :   File "C:\Isles\air quality\src\cleanup.py", line 101, in makeCleanGraph
+    data, publicList = hourlyAverage(fp, period, average_block)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:11:42.065037 : 
+2024-07-18 10:11:42.065037 :   File "C:\Isles\air quality\src\cleanup.py", line 76, in hourlyAverage
+    publicList = publicdata.getOpenAQ("hour", str(earliestStamp), str(mostRecentStamp))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:11:42.069488 : 
+2024-07-18 10:11:42.070495 :   File "C:\Isles\air quality\src\publicdata.py", line 33, in getOpenAQ
+    for entry in res.json()["results"]:
+                 ~~~~~~~~~~^^^^^^^^^^^
+
+2024-07-18 10:11:42.071475 : 
+2024-07-18 10:11:42.071475 : KeyError: 'results'
+
+2024-07-18 10:11:42.071475 : 
+2024-07-18 10:16:33.392608 : Starting utility...
+2024-07-18 10:16:33.392608 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:16:33.402713 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:16:33.422872 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:16:33.732773 : {
+    "detail": [
+        {
+            "type": "greater_than",
+            "loc": [
+                "query",
+                "limit"
+            ],
+            "msg": "Input should be greater than 0",
+            "input": -336,
+            "ctx": {
+                "gt": 0
+            },
+            "url": "https://errors.pydantic.dev/2.1.2/v/greater_than"
+        }
+    ]
+}
+2024-07-18 10:16:33.742998 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:16:33.747239 : Traceback (most recent call last):
+
+2024-07-18 10:16:33.747239 : 
+2024-07-18 10:16:33.748238 :   File "C:\Isles\air quality\src\publicdata.py", line 35, in getOpenAQ
+    for entry in res.json()["results"]:
+                 ~~~~~~~~~~^^^^^^^^^^^
+
+2024-07-18 10:16:33.748564 : 
+2024-07-18 10:16:33.748564 : KeyError: 'results'
+
+2024-07-18 10:16:33.748564 : 
+2024-07-18 10:16:33.748564 : 
+During handling of the above exception, another exception occurred:
+
+
+2024-07-18 10:16:33.749566 : 
+2024-07-18 10:16:33.749566 : Traceback (most recent call last):
+
+2024-07-18 10:16:33.749566 : 
+2024-07-18 10:16:33.749566 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:16:33.750566 : 
+2024-07-18 10:16:33.750566 :   File "C:\Isles\air quality\src\cleanup.py", line 101, in makeCleanGraph
+    data, publicList = hourlyAverage(fp, period, average_block)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:16:33.750566 : 
+2024-07-18 10:16:33.750566 :   File "C:\Isles\air quality\src\cleanup.py", line 76, in hourlyAverage
+    publicList = publicdata.getOpenAQ("hour", str(earliestStamp), str(mostRecentStamp))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:16:33.751619 : 
+2024-07-18 10:16:33.751619 :   File "C:\Isles\air quality\src\publicdata.py", line 46, in getOpenAQ
+    raise Exception("Got bad data from OpenAQ API...")
+
+2024-07-18 10:16:33.751856 : 
+2024-07-18 10:16:33.751856 : Exception: Got bad data from OpenAQ API...
+
+2024-07-18 10:16:33.751856 : 
+2024-07-18 10:17:56.333221 : Starting utility...
+2024-07-18 10:17:56.333221 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:17:56.361694 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:17:56.393325 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:17:56.924017 : OpenAQ entries documented: 336
+2024-07-18 10:17:56.926045 : OpenAQ API query found entries: 335
+2024-07-18 10:17:57.187445 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:17:57.197519 : Traceback (most recent call last):
+
+2024-07-18 10:17:57.197519 : 
+2024-07-18 10:17:57.199546 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.199546 : 
+2024-07-18 10:17:57.199546 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.199546 : 
+2024-07-18 10:17:57.199546 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.199546 : 
+2024-07-18 10:17:57.199546 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 447, in date2num
+    d = [dt.astimezone(UTC).replace(tzinfo=None) for dt in d]
+         ^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.201410 : 
+2024-07-18 10:17:57.201410 : AttributeError: 'float' object has no attribute 'astimezone'
+
+2024-07-18 10:17:57.201632 : 
+2024-07-18 10:17:57.201632 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:17:57.201632 : 
+2024-07-18 10:17:57.201632 : Traceback (most recent call last):
+
+2024-07-18 10:17:57.201632 : 
+2024-07-18 10:17:57.202788 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:17:57.203307 : 
+2024-07-18 10:17:57.203307 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:17:57.203307 : 
+2024-07-18 10:17:57.203307 :   File "C:\Isles\air quality\src\graphing.py", line 88, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:17:57.204306 : 
+2024-07-18 10:17:57.204306 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:17:57.204306 : 
+2024-07-18 10:17:57.204306 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:17:57.204306 : 
+2024-07-18 10:17:57.204306 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:17:57.205298 : 
+2024-07-18 10:17:57.205298 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.205298 : 
+2024-07-18 10:17:57.205298 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:17:57.205298 : 
+2024-07-18 10:17:57.205298 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 673, in recache
+    xconv = self.convert_xunits(self._xorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.206532 : 
+2024-07-18 10:17:57.206532 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 279, in convert_xunits
+    return ax.xaxis.convert_units(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:17:57.206803 : 
+2024-07-18 10:17:57.206803 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:17:57.207298 : 
+2024-07-18 10:17:57.207298 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([datetime.datetime(2024, 6, 4, 19, 0, tzinfo=datetime.timezone.utc),
+       13.0], dtype=object)
+
+2024-07-18 10:17:57.207991 : 
+2024-07-18 10:21:01.374512 : Starting utility...
+2024-07-18 10:21:01.374512 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:21:01.402476 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:21:01.424051 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:21:01.704343 : OpenAQ entries documented: 336
+2024-07-18 10:21:01.714069 : OpenAQ API query found entries: 335
+2024-07-18 10:21:01.874493 : 2024-06-04 14:20:14
+2024-07-18 10:21:01.874493 : 2024-06-04 19:00:00+00:00
+2024-07-18 10:21:02.544243 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:21:02.546775 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:21:02.923875 : OpenAQ entries documented: 336
+2024-07-18 10:21:02.923875 : OpenAQ API query found entries: 335
+2024-07-18 10:21:03.064303 : 2024-06-03 12:56:08
+2024-07-18 10:21:03.064303 : 2024-06-03 17:00:00+00:00
+2024-07-18 10:21:03.792825 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:21:03.792825 : Success!
+2024-07-18 10:21:03.794430 : All generated graphs can be found in the 'output' folder.
+2024-07-18 10:21:03.803075 : Deleting temp files...
+2024-07-18 10:34:31.967981 : Starting utility...
+2024-07-18 10:34:31.967981 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:34:31.983924 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:34:32.012908 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:34:32.367985 : OpenAQ entries documented: 336
+2024-07-18 10:34:32.382054 : OpenAQ API query found entries: 335
+2024-07-18 10:34:32.538318 : 2024-06-04 14:20:14
+2024-07-18 10:34:32.538318 : 2024-06-04 19:00:00
+2024-07-18 10:34:33.270751 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:34:33.278879 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:34:33.527876 : OpenAQ entries documented: 336
+2024-07-18 10:34:33.527876 : OpenAQ API query found entries: 335
+2024-07-18 10:34:33.698184 : 2024-06-03 12:56:08
+2024-07-18 10:34:33.698184 : 2024-06-03 17:00:00
+2024-07-18 10:34:34.416682 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:34:34.417707 : Success!
+2024-07-18 10:34:34.417707 : All generated graphs can be found in the 'output' folder.
+2024-07-18 10:34:34.418829 : Deleting temp files...
+2024-07-18 10:40:48.525695 : Starting utility...
+2024-07-18 10:40:48.525695 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:40:48.550671 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:40:48.576182 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:40:48.829683 : OpenAQ entries documented: 336
+2024-07-18 10:40:48.829683 : OpenAQ API query found entries: 335
+2024-07-18 10:40:48.994776 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:40:49.000513 : Traceback (most recent call last):
+
+2024-07-18 10:40:49.000513 : 
+2024-07-18 10:40:49.000513 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.006494 : 
+2024-07-18 10:40:49.006494 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.006494 : 
+2024-07-18 10:40:49.006494 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.007513 : 
+2024-07-18 10:40:49.007513 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 449, in date2num
+    d = d.astype('datetime64[us]')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.007513 : 
+2024-07-18 10:40:49.007513 : ValueError: Could not convert object to NumPy datetime
+
+2024-07-18 10:40:49.007513 : 
+2024-07-18 10:40:49.007513 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:40:49.008515 : 
+2024-07-18 10:40:49.008515 : Traceback (most recent call last):
+
+2024-07-18 10:40:49.008515 : 
+2024-07-18 10:40:49.009597 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:40:49.009597 : 
+2024-07-18 10:40:49.009597 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:40:49.010520 : 
+2024-07-18 10:40:49.010520 :   File "C:\Isles\air quality\src\graphing.py", line 89, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:40:49.010520 : 
+2024-07-18 10:40:49.010520 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:40:49.011515 : 
+2024-07-18 10:40:49.011515 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:40:49.011667 : 
+2024-07-18 10:40:49.011667 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:40:49.012001 : 
+2024-07-18 10:40:49.012001 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.012001 : 
+2024-07-18 10:40:49.012001 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:40:49.012001 : 
+2024-07-18 10:40:49.012001 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 678, in recache
+    yconv = self.convert_yunits(self._yorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.013062 : 
+2024-07-18 10:40:49.013062 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 291, in convert_yunits
+    return ax.yaxis.convert_units(y)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:40:49.013062 : 
+2024-07-18 10:40:49.013062 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:40:49.013062 : 
+2024-07-18 10:40:49.013062 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([datetime.datetime(2024, 6, 4, 20, 0), 6.0], dtype=object)
+
+2024-07-18 10:40:49.014063 : 
+2024-07-18 10:44:10.620748 : Starting utility...
+2024-07-18 10:44:10.620748 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:44:10.639542 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:44:10.662426 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:44:10.980424 : OpenAQ entries documented: 336
+2024-07-18 10:44:10.980424 : OpenAQ API query found entries: 335
+2024-07-18 10:44:11.141142 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:44:11.150867 : Traceback (most recent call last):
+
+2024-07-18 10:44:11.150867 : 
+2024-07-18 10:44:11.150867 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.158891 : 
+2024-07-18 10:44:11.158891 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.158891 : 
+2024-07-18 10:44:11.158891 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.160503 : 
+2024-07-18 10:44:11.160503 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 449, in date2num
+    d = d.astype('datetime64[us]')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.160503 : 
+2024-07-18 10:44:11.160503 : ValueError: Could not convert object to NumPy datetime
+
+2024-07-18 10:44:11.161503 : 
+2024-07-18 10:44:11.161503 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:44:11.161503 : 
+2024-07-18 10:44:11.161503 : Traceback (most recent call last):
+
+2024-07-18 10:44:11.161503 : 
+2024-07-18 10:44:11.162500 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:44:11.162500 : 
+2024-07-18 10:44:11.162500 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:44:11.162500 : 
+2024-07-18 10:44:11.162500 :   File "C:\Isles\air quality\src\graphing.py", line 89, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:44:11.163500 : 
+2024-07-18 10:44:11.163500 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:44:11.163850 : 
+2024-07-18 10:44:11.163850 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:44:11.164127 : 
+2024-07-18 10:44:11.164127 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:44:11.164191 : 
+2024-07-18 10:44:11.164191 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.164191 : 
+2024-07-18 10:44:11.164191 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:44:11.164843 : 
+2024-07-18 10:44:11.164843 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 673, in recache
+    xconv = self.convert_xunits(self._xorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.165173 : 
+2024-07-18 10:44:11.165173 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 279, in convert_xunits
+    return ax.xaxis.convert_units(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:44:11.165173 : 
+2024-07-18 10:44:11.165173 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:44:11.165173 : 
+2024-07-18 10:44:11.165173 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([Timestamp('2024-06-04 19:00:00'), 13.0], dtype=object)
+
+2024-07-18 10:44:11.166175 : 
+2024-07-18 10:51:01.362312 : Starting utility...
+2024-07-18 10:51:01.362312 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:51:01.372441 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:51:01.402242 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:51:01.842351 : OpenAQ entries documented: 336
+2024-07-18 10:51:01.842351 : OpenAQ API query found entries: 335
+2024-07-18 10:51:01.992711 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:51:02.002588 : Traceback (most recent call last):
+
+2024-07-18 10:51:02.002588 : 
+2024-07-18 10:51:02.002588 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.002588 : 
+2024-07-18 10:51:02.002588 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.009243 : 
+2024-07-18 10:51:02.009243 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.009243 : 
+2024-07-18 10:51:02.009243 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 449, in date2num
+    d = d.astype('datetime64[us]')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.010138 : 
+2024-07-18 10:51:02.010138 : ValueError: Could not convert object to NumPy datetime
+
+2024-07-18 10:51:02.010138 : 
+2024-07-18 10:51:02.010138 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:51:02.010138 : 
+2024-07-18 10:51:02.010138 : Traceback (most recent call last):
+
+2024-07-18 10:51:02.010138 : 
+2024-07-18 10:51:02.011142 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:51:02.011142 : 
+2024-07-18 10:51:02.011142 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:51:02.011142 : 
+2024-07-18 10:51:02.011142 :   File "C:\Isles\air quality\src\graphing.py", line 86, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:51:02.012139 : 
+2024-07-18 10:51:02.012139 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:51:02.012139 : 
+2024-07-18 10:51:02.012139 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:51:02.012139 : 
+2024-07-18 10:51:02.012139 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:51:02.013138 : 
+2024-07-18 10:51:02.013138 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.013138 : 
+2024-07-18 10:51:02.013138 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:51:02.013138 : 
+2024-07-18 10:51:02.013138 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 673, in recache
+    xconv = self.convert_xunits(self._xorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.014139 : 
+2024-07-18 10:51:02.014139 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 279, in convert_xunits
+    return ax.xaxis.convert_units(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:51:02.014759 : 
+2024-07-18 10:51:02.014759 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:51:02.014759 : 
+2024-07-18 10:51:02.014759 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([Timestamp('2024-06-04 19:00:00'), 13.0], dtype=object)
+
+2024-07-18 10:51:02.015491 : 
+2024-07-18 10:52:01.592817 : Starting utility...
+2024-07-18 10:52:01.592817 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:52:01.612537 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:52:01.638299 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:52:01.942642 : OpenAQ entries documented: 336
+2024-07-18 10:52:01.942642 : OpenAQ API query found entries: 335
+2024-07-18 10:52:02.114210 : [datetime.datetime(2024, 6, 4, 14, 20, 14), datetime.datetime(2024, 6, 4, 15, 21, 14), datetime.datetime(2024, 6, 4, 16, 22, 15), datetime.datetime(2024, 6, 4, 17, 26, 30), datetime.datetime(2024, 6, 4, 18, 27, 30), datetime.datetime(2024, 6, 4, 19, 28, 31), datetime.datetime(2024, 6, 4, 20, 29, 31), datetime.datetime(2024, 6, 4, 21, 30, 32), datetime.datetime(2024, 6, 4, 22, 31, 32), datetime.datetime(2024, 6, 4, 23, 32, 32), datetime.datetime(2024, 6, 5, 0, 34, 31), datetime.datetime(2024, 6, 5, 1, 35, 31), datetime.datetime(2024, 6, 5, 2, 36, 32), datetime.datetime(2024, 6, 5, 3, 37, 32), datetime.datetime(2024, 6, 5, 4, 38, 33), datetime.datetime(2024, 6, 5, 5, 39, 33), datetime.datetime(2024, 6, 5, 6, 40, 33), datetime.datetime(2024, 6, 5, 7, 42, 32), datetime.datetime(2024, 6, 5, 8, 43, 32), datetime.datetime(2024, 6, 5, 9, 44, 33), datetime.datetime(2024, 6, 5, 10, 45, 33), datetime.datetime(2024, 6, 5, 11, 46, 34), datetime.datetime(2024, 6, 5, 12, 47, 34), datetime.datetime(2024, 6, 5, 13, 48, 34), datetime.datetime(2024, 6, 5, 14, 49, 34), datetime.datetime(2024, 6, 5, 15, 51, 33), datetime.datetime(2024, 6, 5, 16, 52, 33), datetime.datetime(2024, 6, 5, 17, 53, 34), datetime.datetime(2024, 6, 5, 18, 54, 34), datetime.datetime(2024, 6, 5, 19, 55, 35), datetime.datetime(2024, 6, 5, 20, 56, 35), datetime.datetime(2024, 6, 5, 21, 57, 35), datetime.datetime(2024, 6, 5, 22, 58, 35), datetime.datetime(2024, 6, 6, 0, 0, 34), datetime.datetime(2024, 6, 6, 1, 1, 34), datetime.datetime(2024, 6, 6, 2, 2, 34), datetime.datetime(2024, 6, 6, 3, 3, 35), datetime.datetime(2024, 6, 6, 4, 4, 36), datetime.datetime(2024, 6, 6, 5, 5, 36), datetime.datetime(2024, 6, 6, 6, 7, 35), datetime.datetime(2024, 6, 6, 7, 8, 35), datetime.datetime(2024, 6, 6, 8, 9, 36), datetime.datetime(2024, 6, 6, 9, 10, 37), datetime.datetime(2024, 6, 6, 10, 12, 36), datetime.datetime(2024, 6, 6, 11, 13, 37), datetime.datetime(2024, 6, 6, 12, 15, 36), datetime.datetime(2024, 6, 6, 13, 16, 36), datetime.datetime(2024, 6, 6, 14, 17, 36), datetime.datetime(2024, 6, 6, 15, 18, 37), datetime.datetime(2024, 6, 6, 16, 19, 38), datetime.datetime(2024, 6, 6, 17, 20, 38), datetime.datetime(2024, 6, 6, 18, 21, 38), datetime.datetime(2024, 6, 6, 19, 23, 37), datetime.datetime(2024, 6, 6, 20, 24, 37), datetime.datetime(2024, 6, 6, 21, 25, 38), datetime.datetime(2024, 6, 6, 22, 26, 39), datetime.datetime(2024, 6, 6, 23, 27, 39), datetime.datetime(2024, 6, 7, 0, 28, 39), datetime.datetime(2024, 6, 7, 1, 30, 38), datetime.datetime(2024, 6, 7, 2, 31, 38), datetime.datetime(2024, 6, 7, 3, 32, 39), datetime.datetime(2024, 6, 7, 4, 33, 39), datetime.datetime(2024, 6, 7, 5, 34, 40), datetime.datetime(2024, 6, 7, 6, 35, 40), datetime.datetime(2024, 6, 7, 7, 37, 39), datetime.datetime(2024, 6, 7, 8, 38, 39), datetime.datetime(2024, 6, 7, 9, 39, 39), datetime.datetime(2024, 6, 7, 10, 40, 40), datetime.datetime(2024, 6, 7, 11, 41, 40), datetime.datetime(2024, 6, 7, 12, 42, 41), datetime.datetime(2024, 6, 7, 13, 43, 41), datetime.datetime(2024, 6, 7, 14, 45, 40), datetime.datetime(2024, 6, 7, 15, 46, 40), datetime.datetime(2024, 6, 7, 16, 47, 40), datetime.datetime(2024, 6, 7, 17, 48, 41), datetime.datetime(2024, 6, 7, 18, 49, 41), datetime.datetime(2024, 6, 7, 19, 50, 41), datetime.datetime(2024, 6, 7, 20, 51, 42), datetime.datetime(2024, 6, 7, 21, 52, 42), datetime.datetime(2024, 6, 7, 22, 54, 41), datetime.datetime(2024, 6, 7, 23, 55, 41), datetime.datetime(2024, 6, 8, 0, 56, 41), datetime.datetime(2024, 6, 8, 1, 57, 42), datetime.datetime(2024, 6, 8, 2, 58, 42), datetime.datetime(2024, 6, 8, 3, 59, 42), datetime.datetime(2024, 6, 8, 5, 0, 42), datetime.datetime(2024, 6, 8, 6, 1, 43), datetime.datetime(2024, 6, 8, 7, 3, 42), datetime.datetime(2024, 6, 8, 8, 4, 42), datetime.datetime(2024, 6, 8, 9, 5, 43), datetime.datetime(2024, 6, 8, 10, 6, 43), datetime.datetime(2024, 6, 8, 11, 7, 44), datetime.datetime(2024, 6, 8, 12, 9, 43), datetime.datetime(2024, 6, 8, 13, 10, 43), datetime.datetime(2024, 6, 8, 14, 11, 43), datetime.datetime(2024, 6, 8, 15, 12, 44), datetime.datetime(2024, 6, 8, 16, 13, 44), datetime.datetime(2024, 6, 8, 17, 14, 44), datetime.datetime(2024, 6, 8, 18, 15, 44), datetime.datetime(2024, 6, 8, 19, 16, 44), datetime.datetime(2024, 6, 8, 20, 17, 44), datetime.datetime(2024, 6, 8, 21, 18, 45), datetime.datetime(2024, 6, 8, 22, 19, 45), datetime.datetime(2024, 6, 8, 23, 20, 45), datetime.datetime(2024, 6, 9, 0, 21, 46), datetime.datetime(2024, 6, 9, 1, 22, 46), datetime.datetime(2024, 6, 9, 2, 24, 45), datetime.datetime(2024, 6, 9, 3, 25, 45), datetime.datetime(2024, 6, 9, 4, 26, 46), datetime.datetime(2024, 6, 9, 5, 27, 46), datetime.datetime(2024, 6, 9, 6, 28, 46), datetime.datetime(2024, 6, 9, 7, 29, 46), datetime.datetime(2024, 6, 9, 8, 30, 47), datetime.datetime(2024, 6, 9, 9, 32, 46), datetime.datetime(2024, 6, 9, 10, 33, 47), datetime.datetime(2024, 6, 9, 11, 34, 47), datetime.datetime(2024, 6, 9, 12, 35, 47), datetime.datetime(2024, 6, 9, 13, 36, 47), datetime.datetime(2024, 6, 9, 14, 37, 47), datetime.datetime(2024, 6, 9, 15, 38, 48), datetime.datetime(2024, 6, 9, 16, 40, 47), datetime.datetime(2024, 6, 9, 17, 41, 47), datetime.datetime(2024, 6, 9, 18, 42, 48), datetime.datetime(2024, 6, 9, 19, 43, 48), datetime.datetime(2024, 6, 9, 20, 44, 48), datetime.datetime(2024, 6, 9, 21, 45, 48), datetime.datetime(2024, 6, 9, 22, 46, 49), datetime.datetime(2024, 6, 9, 23, 47, 49), datetime.datetime(2024, 6, 10, 0, 49, 48), datetime.datetime(2024, 6, 10, 1, 50, 49), datetime.datetime(2024, 6, 10, 2, 51, 49), datetime.datetime(2024, 6, 10, 3, 52, 49), datetime.datetime(2024, 6, 10, 4, 53, 49), datetime.datetime(2024, 6, 10, 5, 54, 49), datetime.datetime(2024, 6, 10, 6, 55, 50), datetime.datetime(2024, 6, 10, 7, 57, 49), datetime.datetime(2024, 6, 10, 8, 58, 49), datetime.datetime(2024, 6, 10, 9, 59, 50), datetime.datetime(2024, 6, 10, 11, 0, 50), datetime.datetime(2024, 6, 10, 12, 1, 50), datetime.datetime(2024, 6, 10, 13, 2, 51), datetime.datetime(2024, 6, 10, 14, 3, 51), datetime.datetime(2024, 6, 10, 15, 5, 50), datetime.datetime(2024, 6, 10, 16, 6, 50), datetime.datetime(2024, 6, 10, 17, 7, 51), datetime.datetime(2024, 6, 10, 18, 8, 51), datetime.datetime(2024, 6, 10, 19, 9, 51), datetime.datetime(2024, 6, 10, 20, 10, 52), datetime.datetime(2024, 6, 10, 21, 12, 51), datetime.datetime(2024, 6, 10, 22, 13, 51), datetime.datetime(2024, 6, 10, 23, 14, 51), datetime.datetime(2024, 6, 11, 0, 15, 52), datetime.datetime(2024, 6, 11, 1, 16, 52), datetime.datetime(2024, 6, 11, 2, 17, 52), datetime.datetime(2024, 6, 11, 3, 18, 53), datetime.datetime(2024, 6, 11, 4, 20, 52), datetime.datetime(2024, 6, 11, 5, 21, 52), datetime.datetime(2024, 6, 11, 6, 22, 52), datetime.datetime(2024, 6, 11, 7, 23, 53), datetime.datetime(2024, 6, 11, 8, 24, 53), datetime.datetime(2024, 6, 11, 9, 25, 53), datetime.datetime(2024, 6, 11, 10, 26, 53), datetime.datetime(2024, 6, 11, 11, 27, 54), datetime.datetime(2024, 6, 11, 12, 28, 54), datetime.datetime(2024, 6, 11, 13, 30, 53), datetime.datetime(2024, 6, 11, 14, 31, 53), datetime.datetime(2024, 6, 11, 15, 32, 54), datetime.datetime(2024, 6, 11, 16, 33, 54), datetime.datetime(2024, 6, 11, 17, 34, 54), datetime.datetime(2024, 6, 11, 18, 35, 54), datetime.datetime(2024, 6, 11, 19, 36, 55), datetime.datetime(2024, 6, 11, 20, 37, 55), datetime.datetime(2024, 6, 11, 21, 39, 54), datetime.datetime(2024, 6, 11, 22, 40, 54), datetime.datetime(2024, 6, 11, 23, 41, 55), datetime.datetime(2024, 6, 12, 0, 42, 55), datetime.datetime(2024, 6, 12, 1, 43, 55), datetime.datetime(2024, 6, 12, 2, 44, 55), datetime.datetime(2024, 6, 12, 3, 45, 55), datetime.datetime(2024, 6, 12, 4, 46, 56), datetime.datetime(2024, 6, 12, 5, 48, 55), datetime.datetime(2024, 6, 12, 6, 49, 55), datetime.datetime(2024, 6, 12, 7, 50, 56), datetime.datetime(2024, 6, 12, 8, 51, 56), datetime.datetime(2024, 6, 12, 9, 52, 56), datetime.datetime(2024, 6, 12, 10, 53, 56), datetime.datetime(2024, 6, 12, 11, 54, 57), datetime.datetime(2024, 6, 12, 12, 55, 57), datetime.datetime(2024, 6, 12, 13, 57, 56), datetime.datetime(2024, 6, 12, 14, 58, 56), datetime.datetime(2024, 6, 12, 15, 59, 57), datetime.datetime(2024, 6, 12, 17, 0, 57), datetime.datetime(2024, 6, 12, 18, 1, 57), datetime.datetime(2024, 6, 12, 19, 2, 57), datetime.datetime(2024, 6, 12, 20, 3, 57), datetime.datetime(2024, 6, 12, 21, 4, 57), datetime.datetime(2024, 6, 12, 22, 5, 57), datetime.datetime(2024, 6, 12, 23, 6, 57), datetime.datetime(2024, 6, 13, 0, 7, 58), datetime.datetime(2024, 6, 13, 1, 8, 58), datetime.datetime(2024, 6, 13, 2, 9, 58), datetime.datetime(2024, 6, 13, 3, 10, 59), datetime.datetime(2024, 6, 13, 4, 12, 58), datetime.datetime(2024, 6, 13, 5, 13, 58), datetime.datetime(2024, 6, 13, 6, 14, 59), datetime.datetime(2024, 6, 13, 7, 16, 58), datetime.datetime(2024, 6, 13, 8, 17, 59), datetime.datetime(2024, 6, 13, 9, 18, 59), datetime.datetime(2024, 6, 13, 10, 19, 59), datetime.datetime(2024, 6, 13, 11, 20, 59), datetime.datetime(2024, 6, 13, 12, 21, 59), datetime.datetime(2024, 6, 13, 13, 23), datetime.datetime(2024, 6, 13, 14, 24), datetime.datetime(2024, 6, 13, 15, 25), datetime.datetime(2024, 6, 13, 16, 26), datetime.datetime(2024, 6, 13, 17, 27), datetime.datetime(2024, 6, 13, 18, 28, 1), datetime.datetime(2024, 6, 13, 19, 30), datetime.datetime(2024, 6, 13, 20, 31), datetime.datetime(2024, 6, 13, 21, 32, 1), datetime.datetime(2024, 6, 13, 22, 33, 1), datetime.datetime(2024, 6, 13, 23, 34, 1), datetime.datetime(2024, 6, 14, 0, 35, 2), datetime.datetime(2024, 6, 14, 1, 36, 2), datetime.datetime(2024, 6, 14, 2, 37, 2), datetime.datetime(2024, 6, 14, 3, 39, 1), datetime.datetime(2024, 6, 14, 4, 40, 1), datetime.datetime(2024, 6, 14, 5, 41, 2), datetime.datetime(2024, 6, 14, 6, 42, 2), datetime.datetime(2024, 6, 14, 7, 43, 2), datetime.datetime(2024, 6, 14, 8, 44, 2), datetime.datetime(2024, 6, 14, 9, 45, 2), datetime.datetime(2024, 6, 14, 10, 46, 3), datetime.datetime(2024, 6, 14, 11, 48, 2), datetime.datetime(2024, 6, 14, 12, 49, 2), datetime.datetime(2024, 6, 14, 13, 50, 3), datetime.datetime(2024, 6, 14, 14, 51, 3), datetime.datetime(2024, 6, 14, 15, 52, 3), datetime.datetime(2024, 6, 14, 16, 53, 3), datetime.datetime(2024, 6, 14, 17, 54, 3), datetime.datetime(2024, 6, 14, 18, 55, 3), datetime.datetime(2024, 6, 14, 19, 56, 3), datetime.datetime(2024, 6, 14, 20, 57, 3), datetime.datetime(2024, 6, 14, 21, 58, 4), datetime.datetime(2024, 6, 14, 22, 59, 4), datetime.datetime(2024, 6, 15, 0, 0, 4), datetime.datetime(2024, 6, 15, 1, 1, 4), datetime.datetime(2024, 6, 15, 2, 2, 4), datetime.datetime(2024, 6, 15, 3, 3, 4), datetime.datetime(2024, 6, 15, 4, 4, 4), datetime.datetime(2024, 6, 15, 5, 5, 5), datetime.datetime(2024, 6, 15, 6, 6, 5), datetime.datetime(2024, 6, 15, 7, 7, 5), datetime.datetime(2024, 6, 15, 8, 8, 5), datetime.datetime(2024, 6, 15, 9, 9, 5), datetime.datetime(2024, 6, 15, 10, 10, 5), datetime.datetime(2024, 6, 15, 11, 11, 5), datetime.datetime(2024, 6, 15, 12, 12, 5), datetime.datetime(2024, 6, 15, 13, 13, 6), datetime.datetime(2024, 6, 15, 14, 14, 6), datetime.datetime(2024, 6, 15, 15, 15, 6), datetime.datetime(2024, 6, 15, 16, 16, 6), datetime.datetime(2024, 6, 15, 17, 17, 6), datetime.datetime(2024, 6, 15, 18, 18, 6), datetime.datetime(2024, 6, 15, 19, 19, 6), datetime.datetime(2024, 6, 15, 20, 20, 7), datetime.datetime(2024, 6, 15, 21, 21, 7), datetime.datetime(2024, 6, 15, 22, 22, 7), datetime.datetime(2024, 6, 15, 23, 23, 7), datetime.datetime(2024, 6, 16, 0, 24, 7), datetime.datetime(2024, 6, 16, 1, 25, 7), datetime.datetime(2024, 6, 16, 2, 26, 7), datetime.datetime(2024, 6, 16, 3, 27, 8), datetime.datetime(2024, 6, 16, 4, 28, 8), datetime.datetime(2024, 6, 16, 5, 29, 8), datetime.datetime(2024, 6, 16, 6, 30, 8), datetime.datetime(2024, 6, 16, 7, 31, 8), datetime.datetime(2024, 6, 16, 8, 32, 8), datetime.datetime(2024, 6, 16, 9, 33, 9), datetime.datetime(2024, 6, 16, 10, 34, 9), datetime.datetime(2024, 6, 16, 11, 35, 9), datetime.datetime(2024, 6, 16, 12, 36, 9), datetime.datetime(2024, 6, 16, 13, 38, 8), datetime.datetime(2024, 6, 16, 14, 39, 9), datetime.datetime(2024, 6, 16, 15, 40, 9), datetime.datetime(2024, 6, 16, 16, 41, 10), datetime.datetime(2024, 6, 16, 17, 42, 10), datetime.datetime(2024, 6, 16, 18, 43, 10), datetime.datetime(2024, 6, 16, 19, 44, 10), datetime.datetime(2024, 6, 16, 20, 45, 10), datetime.datetime(2024, 6, 16, 21, 46, 10), datetime.datetime(2024, 6, 16, 22, 47, 10), datetime.datetime(2024, 6, 16, 23, 48, 11), datetime.datetime(2024, 6, 17, 0, 49, 11), datetime.datetime(2024, 6, 17, 1, 50, 11), datetime.datetime(2024, 6, 17, 2, 51, 11), datetime.datetime(2024, 6, 17, 3, 52, 11), datetime.datetime(2024, 6, 17, 4, 53, 11), datetime.datetime(2024, 6, 17, 5, 54, 11), datetime.datetime(2024, 6, 17, 6, 55, 12), datetime.datetime(2024, 6, 17, 7, 56, 12), datetime.datetime(2024, 6, 17, 8, 57, 12), datetime.datetime(2024, 6, 17, 9, 58, 12), datetime.datetime(2024, 6, 17, 10, 59, 12), datetime.datetime(2024, 6, 17, 12, 0, 12), datetime.datetime(2024, 6, 17, 13, 1, 12), datetime.datetime(2024, 6, 17, 14, 2, 12), datetime.datetime(2024, 6, 17, 15, 3, 13), datetime.datetime(2024, 6, 17, 16, 4, 13), datetime.datetime(2024, 6, 17, 17, 5, 13), datetime.datetime(2024, 6, 17, 18, 6, 13), datetime.datetime(2024, 6, 17, 19, 8, 12), datetime.datetime(2024, 6, 17, 20, 9, 13), datetime.datetime(2024, 6, 17, 21, 10, 13), datetime.datetime(2024, 6, 17, 22, 11, 14), datetime.datetime(2024, 6, 17, 23, 12, 14), datetime.datetime(2024, 6, 18, 0, 13, 14), datetime.datetime(2024, 6, 18, 1, 14, 14), datetime.datetime(2024, 6, 18, 2, 16, 13), datetime.datetime(2024, 6, 18, 3, 17, 14), datetime.datetime(2024, 6, 18, 4, 18, 15), datetime.datetime(2024, 6, 18, 5, 19, 15), datetime.datetime(2024, 6, 18, 6, 20, 15), datetime.datetime(2024, 6, 18, 7, 21, 15), datetime.datetime(2024, 6, 18, 8, 23, 14), datetime.datetime(2024, 6, 18, 9, 24, 15), datetime.datetime(2024, 6, 18, 10, 26, 14), datetime.datetime(2024, 6, 18, 11, 27, 15), datetime.datetime(2024, 6, 18, 12, 28, 16), datetime.datetime(2024, 6, 18, 13, 29, 16)]
+2024-07-18 10:52:02.125110 : [Timestamp('2024-06-04 19:00:00'), 13.0]
+2024-07-18 10:52:02.125110 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:52:02.134703 : Traceback (most recent call last):
+
+2024-07-18 10:52:02.134703 : 
+2024-07-18 10:52:02.135703 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.135703 : 
+2024-07-18 10:52:02.135703 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.135703 : 
+2024-07-18 10:52:02.135703 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.136703 : 
+2024-07-18 10:52:02.136703 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 449, in date2num
+    d = d.astype('datetime64[us]')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.136703 : 
+2024-07-18 10:52:02.136703 : ValueError: Could not convert object to NumPy datetime
+
+2024-07-18 10:52:02.136703 : 
+2024-07-18 10:52:02.136703 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:52:02.136703 : 
+2024-07-18 10:52:02.136703 : Traceback (most recent call last):
+
+2024-07-18 10:52:02.137702 : 
+2024-07-18 10:52:02.137702 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:52:02.137702 : 
+2024-07-18 10:52:02.137702 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:52:02.137702 : 
+2024-07-18 10:52:02.137702 :   File "C:\Isles\air quality\src\graphing.py", line 90, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:52:02.138702 : 
+2024-07-18 10:52:02.138702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:52:02.138702 : 
+2024-07-18 10:52:02.138702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:52:02.138702 : 
+2024-07-18 10:52:02.138702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:52:02.138702 : 
+2024-07-18 10:52:02.138702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.139702 : 
+2024-07-18 10:52:02.139702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:52:02.139702 : 
+2024-07-18 10:52:02.139702 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 673, in recache
+    xconv = self.convert_xunits(self._xorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.140730 : 
+2024-07-18 10:52:02.140730 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 279, in convert_xunits
+    return ax.xaxis.convert_units(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:52:02.140730 : 
+2024-07-18 10:52:02.141376 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:52:02.141490 : 
+2024-07-18 10:52:02.141490 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([Timestamp('2024-06-04 19:00:00'), 13.0], dtype=object)
+
+2024-07-18 10:52:02.141490 : 
+2024-07-18 10:53:07.963175 : Starting utility...
+2024-07-18 10:53:07.963175 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:53:07.979281 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:53:08.007673 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:53:08.371722 : OpenAQ entries documented: 336
+2024-07-18 10:53:08.373767 : OpenAQ API query found entries: 335
+2024-07-18 10:53:08.555646 : ([Timestamp('2024-06-04 19:00:00'), Timestamp('2024-06-04 20:00:00'), Timestamp('2024-06-04 21:00:00'), Timestamp('2024-06-04 22:00:00'), Timestamp('2024-06-04 23:00:00'), Timestamp('2024-06-05 00:00:00'), Timestamp('2024-06-05 01:00:00'), Timestamp('2024-06-05 02:00:00'), Timestamp('2024-06-05 03:00:00'), Timestamp('2024-06-05 04:00:00'), Timestamp('2024-06-05 05:00:00'), Timestamp('2024-06-05 06:00:00'), Timestamp('2024-06-05 07:00:00'), Timestamp('2024-06-05 08:00:00'), Timestamp('2024-06-05 09:00:00'), Timestamp('2024-06-05 10:00:00'), Timestamp('2024-06-05 11:00:00'), Timestamp('2024-06-05 12:00:00'), Timestamp('2024-06-05 13:00:00'), Timestamp('2024-06-05 14:00:00'), Timestamp('2024-06-05 15:00:00'), Timestamp('2024-06-05 16:00:00'), Timestamp('2024-06-05 17:00:00'), Timestamp('2024-06-05 18:00:00'), Timestamp('2024-06-05 19:00:00'), Timestamp('2024-06-05 20:00:00'), Timestamp('2024-06-05 21:00:00'), Timestamp('2024-06-05 22:00:00'), Timestamp('2024-06-05 23:00:00'), Timestamp('2024-06-06 00:00:00'), Timestamp('2024-06-06 01:00:00'), Timestamp('2024-06-06 02:00:00'), Timestamp('2024-06-06 03:00:00'), Timestamp('2024-06-06 04:00:00'), Timestamp('2024-06-06 05:00:00'), Timestamp('2024-06-06 06:00:00'), Timestamp('2024-06-06 07:00:00'), Timestamp('2024-06-06 08:00:00'), Timestamp('2024-06-06 09:00:00'), Timestamp('2024-06-06 10:00:00'), Timestamp('2024-06-06 11:00:00'), Timestamp('2024-06-06 12:00:00'), Timestamp('2024-06-06 13:00:00'), Timestamp('2024-06-06 14:00:00'), Timestamp('2024-06-06 15:00:00'), Timestamp('2024-06-06 16:00:00'), Timestamp('2024-06-06 17:00:00'), Timestamp('2024-06-06 18:00:00'), Timestamp('2024-06-06 19:00:00'), Timestamp('2024-06-06 20:00:00'), Timestamp('2024-06-06 21:00:00'), Timestamp('2024-06-06 22:00:00'), Timestamp('2024-06-06 23:00:00'), Timestamp('2024-06-07 00:00:00'), Timestamp('2024-06-07 01:00:00'), Timestamp('2024-06-07 02:00:00'), Timestamp('2024-06-07 03:00:00'), Timestamp('2024-06-07 04:00:00'), Timestamp('2024-06-07 05:00:00'), Timestamp('2024-06-07 06:00:00'), Timestamp('2024-06-07 07:00:00'), Timestamp('2024-06-07 08:00:00'), Timestamp('2024-06-07 09:00:00'), Timestamp('2024-06-07 10:00:00'), Timestamp('2024-06-07 11:00:00'), Timestamp('2024-06-07 12:00:00'), Timestamp('2024-06-07 13:00:00'), Timestamp('2024-06-07 14:00:00'), Timestamp('2024-06-07 15:00:00'), Timestamp('2024-06-07 16:00:00'), Timestamp('2024-06-07 17:00:00'), Timestamp('2024-06-07 18:00:00'), Timestamp('2024-06-07 19:00:00'), Timestamp('2024-06-07 20:00:00'), Timestamp('2024-06-07 21:00:00'), Timestamp('2024-06-07 22:00:00'), Timestamp('2024-06-07 23:00:00'), Timestamp('2024-06-08 00:00:00'), Timestamp('2024-06-08 01:00:00'), Timestamp('2024-06-08 02:00:00'), Timestamp('2024-06-08 03:00:00'), Timestamp('2024-06-08 04:00:00'), Timestamp('2024-06-08 05:00:00'), Timestamp('2024-06-08 06:00:00'), Timestamp('2024-06-08 07:00:00'), Timestamp('2024-06-08 08:00:00'), Timestamp('2024-06-08 09:00:00'), Timestamp('2024-06-08 10:00:00'), Timestamp('2024-06-08 11:00:00'), Timestamp('2024-06-08 12:00:00'), Timestamp('2024-06-08 13:00:00'), Timestamp('2024-06-08 14:00:00'), Timestamp('2024-06-08 15:00:00'), Timestamp('2024-06-08 16:00:00'), Timestamp('2024-06-08 17:00:00'), Timestamp('2024-06-08 18:00:00'), Timestamp('2024-06-08 19:00:00'), Timestamp('2024-06-08 20:00:00'), Timestamp('2024-06-08 21:00:00'), Timestamp('2024-06-08 22:00:00'), Timestamp('2024-06-08 23:00:00'), Timestamp('2024-06-09 00:00:00'), Timestamp('2024-06-09 01:00:00'), Timestamp('2024-06-09 02:00:00'), Timestamp('2024-06-09 03:00:00'), Timestamp('2024-06-09 04:00:00'), Timestamp('2024-06-09 05:00:00'), Timestamp('2024-06-09 06:00:00'), Timestamp('2024-06-09 07:00:00'), Timestamp('2024-06-09 08:00:00'), Timestamp('2024-06-09 09:00:00'), Timestamp('2024-06-09 10:00:00'), Timestamp('2024-06-09 11:00:00'), Timestamp('2024-06-09 12:00:00'), Timestamp('2024-06-09 13:00:00'), Timestamp('2024-06-09 14:00:00'), Timestamp('2024-06-09 15:00:00'), Timestamp('2024-06-09 16:00:00'), Timestamp('2024-06-09 17:00:00'), Timestamp('2024-06-09 18:00:00'), Timestamp('2024-06-09 19:00:00'), Timestamp('2024-06-09 20:00:00'), Timestamp('2024-06-09 21:00:00'), Timestamp('2024-06-09 22:00:00'), Timestamp('2024-06-09 23:00:00'), Timestamp('2024-06-10 00:00:00'), Timestamp('2024-06-10 01:00:00'), Timestamp('2024-06-10 02:00:00'), Timestamp('2024-06-10 03:00:00'), Timestamp('2024-06-10 04:00:00'), Timestamp('2024-06-10 05:00:00'), Timestamp('2024-06-10 06:00:00'), Timestamp('2024-06-10 07:00:00'), Timestamp('2024-06-10 08:00:00'), Timestamp('2024-06-10 09:00:00'), Timestamp('2024-06-10 10:00:00'), Timestamp('2024-06-10 11:00:00'), Timestamp('2024-06-10 12:00:00'), Timestamp('2024-06-10 13:00:00'), Timestamp('2024-06-10 14:00:00'), Timestamp('2024-06-10 15:00:00'), Timestamp('2024-06-10 16:00:00'), Timestamp('2024-06-10 17:00:00'), Timestamp('2024-06-10 18:00:00'), Timestamp('2024-06-10 19:00:00'), Timestamp('2024-06-10 20:00:00'), Timestamp('2024-06-10 21:00:00'), Timestamp('2024-06-10 22:00:00'), Timestamp('2024-06-10 23:00:00'), Timestamp('2024-06-11 00:00:00'), Timestamp('2024-06-11 01:00:00'), Timestamp('2024-06-11 02:00:00'), Timestamp('2024-06-11 03:00:00'), Timestamp('2024-06-11 04:00:00'), Timestamp('2024-06-11 05:00:00'), Timestamp('2024-06-11 06:00:00'), Timestamp('2024-06-11 07:00:00'), Timestamp('2024-06-11 08:00:00'), Timestamp('2024-06-11 09:00:00'), Timestamp('2024-06-11 10:00:00'), Timestamp('2024-06-11 11:00:00'), Timestamp('2024-06-11 12:00:00'), Timestamp('2024-06-11 13:00:00'), Timestamp('2024-06-11 14:00:00'), Timestamp('2024-06-11 15:00:00'), Timestamp('2024-06-11 16:00:00'), Timestamp('2024-06-11 17:00:00'), Timestamp('2024-06-11 18:00:00'), Timestamp('2024-06-11 19:00:00'), Timestamp('2024-06-11 20:00:00'), Timestamp('2024-06-11 21:00:00'), Timestamp('2024-06-11 22:00:00'), Timestamp('2024-06-11 23:00:00'), Timestamp('2024-06-12 00:00:00'), Timestamp('2024-06-12 01:00:00'), Timestamp('2024-06-12 02:00:00'), Timestamp('2024-06-12 03:00:00'), Timestamp('2024-06-12 04:00:00'), Timestamp('2024-06-12 05:00:00'), Timestamp('2024-06-12 06:00:00'), Timestamp('2024-06-12 07:00:00'), Timestamp('2024-06-12 08:00:00'), Timestamp('2024-06-12 09:00:00'), Timestamp('2024-06-12 10:00:00'), Timestamp('2024-06-12 11:00:00'), Timestamp('2024-06-12 12:00:00'), Timestamp('2024-06-12 13:00:00'), Timestamp('2024-06-12 14:00:00'), Timestamp('2024-06-12 15:00:00'), Timestamp('2024-06-12 16:00:00'), Timestamp('2024-06-12 17:00:00'), Timestamp('2024-06-12 18:00:00'), Timestamp('2024-06-12 19:00:00'), Timestamp('2024-06-12 20:00:00'), Timestamp('2024-06-12 21:00:00'), Timestamp('2024-06-12 22:00:00'), Timestamp('2024-06-12 23:00:00'), Timestamp('2024-06-13 00:00:00'), Timestamp('2024-06-13 01:00:00'), Timestamp('2024-06-13 02:00:00'), Timestamp('2024-06-13 03:00:00'), Timestamp('2024-06-13 04:00:00'), Timestamp('2024-06-13 05:00:00'), Timestamp('2024-06-13 06:00:00'), Timestamp('2024-06-13 07:00:00'), Timestamp('2024-06-13 08:00:00'), Timestamp('2024-06-13 09:00:00'), Timestamp('2024-06-13 10:00:00'), Timestamp('2024-06-13 11:00:00'), Timestamp('2024-06-13 12:00:00'), Timestamp('2024-06-13 13:00:00'), Timestamp('2024-06-13 14:00:00'), Timestamp('2024-06-13 15:00:00'), Timestamp('2024-06-13 16:00:00'), Timestamp('2024-06-13 17:00:00'), Timestamp('2024-06-13 18:00:00'), Timestamp('2024-06-13 19:00:00'), Timestamp('2024-06-13 20:00:00'), Timestamp('2024-06-13 21:00:00'), Timestamp('2024-06-13 22:00:00'), Timestamp('2024-06-13 23:00:00'), Timestamp('2024-06-14 00:00:00'), Timestamp('2024-06-14 01:00:00'), Timestamp('2024-06-14 02:00:00'), Timestamp('2024-06-14 03:00:00'), Timestamp('2024-06-14 04:00:00'), Timestamp('2024-06-14 05:00:00'), Timestamp('2024-06-14 06:00:00'), Timestamp('2024-06-14 07:00:00'), Timestamp('2024-06-14 08:00:00'), Timestamp('2024-06-14 09:00:00'), Timestamp('2024-06-14 10:00:00'), Timestamp('2024-06-14 11:00:00'), Timestamp('2024-06-14 12:00:00'), Timestamp('2024-06-14 13:00:00'), Timestamp('2024-06-14 14:00:00'), Timestamp('2024-06-14 15:00:00'), Timestamp('2024-06-14 16:00:00'), Timestamp('2024-06-14 17:00:00'), Timestamp('2024-06-14 18:00:00'), Timestamp('2024-06-14 19:00:00'), Timestamp('2024-06-14 20:00:00'), Timestamp('2024-06-14 21:00:00'), Timestamp('2024-06-14 23:00:00'), Timestamp('2024-06-15 00:00:00'), Timestamp('2024-06-15 01:00:00'), Timestamp('2024-06-15 02:00:00'), Timestamp('2024-06-15 03:00:00'), Timestamp('2024-06-15 04:00:00'), Timestamp('2024-06-15 05:00:00'), Timestamp('2024-06-15 06:00:00'), Timestamp('2024-06-15 07:00:00'), Timestamp('2024-06-15 08:00:00'), Timestamp('2024-06-15 09:00:00'), Timestamp('2024-06-15 10:00:00'), Timestamp('2024-06-15 11:00:00'), Timestamp('2024-06-15 12:00:00'), Timestamp('2024-06-15 13:00:00'), Timestamp('2024-06-15 14:00:00'), Timestamp('2024-06-15 15:00:00'), Timestamp('2024-06-15 16:00:00'), Timestamp('2024-06-15 17:00:00'), Timestamp('2024-06-15 18:00:00'), Timestamp('2024-06-15 19:00:00'), Timestamp('2024-06-15 20:00:00'), Timestamp('2024-06-15 21:00:00'), Timestamp('2024-06-15 22:00:00'), Timestamp('2024-06-15 23:00:00'), Timestamp('2024-06-16 00:00:00'), Timestamp('2024-06-16 01:00:00'), Timestamp('2024-06-16 02:00:00'), Timestamp('2024-06-16 03:00:00'), Timestamp('2024-06-16 04:00:00'), Timestamp('2024-06-16 05:00:00'), Timestamp('2024-06-16 06:00:00'), Timestamp('2024-06-16 07:00:00'), Timestamp('2024-06-16 08:00:00'), Timestamp('2024-06-16 09:00:00'), Timestamp('2024-06-16 10:00:00'), Timestamp('2024-06-16 11:00:00'), Timestamp('2024-06-16 12:00:00'), Timestamp('2024-06-16 13:00:00'), Timestamp('2024-06-16 14:00:00'), Timestamp('2024-06-16 15:00:00'), Timestamp('2024-06-16 16:00:00'), Timestamp('2024-06-16 17:00:00'), Timestamp('2024-06-16 18:00:00'), Timestamp('2024-06-16 19:00:00'), Timestamp('2024-06-16 20:00:00'), Timestamp('2024-06-16 21:00:00'), Timestamp('2024-06-16 22:00:00'), Timestamp('2024-06-16 23:00:00'), Timestamp('2024-06-17 00:00:00'), Timestamp('2024-06-17 01:00:00'), Timestamp('2024-06-17 02:00:00'), Timestamp('2024-06-17 03:00:00'), Timestamp('2024-06-17 04:00:00'), Timestamp('2024-06-17 05:00:00'), Timestamp('2024-06-17 06:00:00'), Timestamp('2024-06-17 07:00:00'), Timestamp('2024-06-17 08:00:00'), Timestamp('2024-06-17 09:00:00'), Timestamp('2024-06-17 10:00:00'), Timestamp('2024-06-17 11:00:00'), Timestamp('2024-06-17 12:00:00'), Timestamp('2024-06-17 13:00:00'), Timestamp('2024-06-17 14:00:00'), Timestamp('2024-06-17 15:00:00'), Timestamp('2024-06-17 16:00:00'), Timestamp('2024-06-17 17:00:00'), Timestamp('2024-06-17 18:00:00'), Timestamp('2024-06-17 19:00:00'), Timestamp('2024-06-17 20:00:00'), Timestamp('2024-06-17 21:00:00'), Timestamp('2024-06-17 22:00:00'), Timestamp('2024-06-17 23:00:00'), Timestamp('2024-06-18 00:00:00'), Timestamp('2024-06-18 01:00:00'), Timestamp('2024-06-18 02:00:00'), Timestamp('2024-06-18 03:00:00'), Timestamp('2024-06-18 04:00:00'), Timestamp('2024-06-18 05:00:00'), Timestamp('2024-06-18 06:00:00'), Timestamp('2024-06-18 07:00:00'), Timestamp('2024-06-18 08:00:00'), Timestamp('2024-06-18 09:00:00'), Timestamp('2024-06-18 10:00:00'), Timestamp('2024-06-18 11:00:00'), Timestamp('2024-06-18 12:00:00'), Timestamp('2024-06-18 13:00:00'), Timestamp('2024-06-18 14:00:00'), Timestamp('2024-06-18 15:00:00'), Timestamp('2024-06-18 16:00:00'), Timestamp('2024-06-18 17:00:00'), Timestamp('2024-06-18 18:00:00')], [13.0, 6.0, 9.3, 10.0, 5.3, 7.5, 7.1, 8.0, 9.5, 12.0, 14.0, 15.0, 13.0, 12.0, 13.0, 16.0, 14.0, 0.8, 11.0, 11.0, 15.0, 12.0, 10.0, 12.0, 3.2, 10.0, 7.1, 9.1, 2.2, 22.0, -3.7, 21.0, 6.0, 13.0, 9.1, 12.0, 2.7, 5.0, 7.3, 14.0, 12.0, 16.0, 20.0, 18.0, 11.0, 8.1, 10.0, 2.7, 3.7, 4.4, 10.0, 9.3, 5.1, 9.6, 12.0, 11.0, 18.0, 15.0, 6.5, 9.1, 3.5, 8.1, 5.5, 6.3, 8.3, 4.5, 8.3, 10.0, 12.0, 9.5, 6.4, 6.4, 9.1, 9.3, 8.5, 8.1, 0.8, 0.3, -2.5, 4.0, 5.6, 6.3, 7.5, -1.0, 2.5, 5.8, 3.5, 1.3, 4.9, 2.7, 5.5, 6.0, 0.5, 2.0, 2.2, 4.0, 3.4, 4.0, 2.9, 5.0, 2.0, -3.5, -1.7, 4.9, 15.0, 9.8, 16.0, 14.0, 14.0, 9.6, 8.5, 12.0, 9.1, 12.0, 7.1, 10.0, 9.5, -1.5, 9.3, 4.6, 3.0, 2.5, 4.8, 2.2, 0.6, -3.0, 1.1, 4.5, 3.5, 0.5, 2.9, 2.5, 4.9, 2.7, 2.4, 3.5, 5.5, 6.5, 7.1, 1.1, 12.0, 5.4, 0.5, 6.6, 1.5, 1.1, 7.3, 2.0, 0.5, 0.8, 2.2, 7.6, 3.5, 4.4, 5.6, -1.1, 7.5, 5.9, 7.1, 0.6, 0.6, -1.7, 2.5, 4.5, 3.2, 7.9, 4.3, 3.7, 12.0, -2.5, -2.9, 4.5, 3.2, 4.6, 5.5, 4.1, 6.6, 7.6, 7.0, 3.9, 4.8, 2.5, 3.4, -0.1, 4.4, 3.0, 3.4, 12.0, 7.9, 7.9, 3.2, 5.6, 6.4, 4.6, 12.0, 7.1, 6.5, 5.3, 6.6, 13.0, 7.6, 8.6, 13.0, 14.0, 12.0, 9.8, 9.3, 13.0, 8.3, 19.0, 14.0, 15.0, 19.0, 14.0, 9.8, 6.0, 14.0, 13.0, 11.0, 11.0, 3.2, 9.0, 6.8, 8.6, 11.0, 11.0, 11.0, 11.0, 9.6, 7.1, 8.6, 10.0, 15.0, 14.0, 20.0, 19.0, 23.0, 15.0, 20.0, 14.0, 29.0, 20.0, 12.0, -4.6, 8.3, 6.6, 2.4, 3.7, 3.5, 4.6, 3.4, 5.9, 8.3, 7.6, 4.0, 10.0, 4.5, 5.3, 5.5, 6.8, 7.8, 4.4, 3.0, 6.8, 6.5, 2.5, 2.4, 1.7, 1.5, 4.3, 5.5, 9.1, 4.0, 4.5, 6.4, 3.2, 6.3, 3.2, 5.0, 6.1, 6.5, 9.5, 7.6, 8.6, 8.1, 8.3, 7.8, 5.5, 6.0, 8.0, 5.3, 7.0, 7.3, 9.5, 7.6, 9.5, 10.0, 8.1, 8.1, 12.0, 10.0, 10.0, 9.5, 12.0, 6.8, 11.0, 15.0, 9.8, 12.0, 13.0, 14.0, 11.0, 11.0, 11.0, 12.0, 7.5, 2.9, 6.0, 8.6, 8.0, 7.9, 8.3, 7.0, 7.8, 8.6, 8.0, 11.0, 7.0, 7.9, 7.5, 9.3, 23.0, 14.0, 18.0, 18.0])
+2024-07-18 10:53:08.572598 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:53:08.579635 : Traceback (most recent call last):
+
+2024-07-18 10:53:08.579635 : 
+2024-07-18 10:53:08.580446 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1804, in convert_units
+    ret = self.converter.convert(x, self.units, self)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.580446 : 
+2024-07-18 10:53:08.580446 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1829, in convert
+    return self._get_converter().convert(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.582003 : 
+2024-07-18 10:53:08.582003 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 1757, in convert
+    return date2num(value)
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.582718 : 
+2024-07-18 10:53:08.582718 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\dates.py", line 449, in date2num
+    d = d.astype('datetime64[us]')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.582718 : 
+2024-07-18 10:53:08.582718 : ValueError: Could not convert object to NumPy datetime
+
+2024-07-18 10:53:08.582718 : 
+2024-07-18 10:53:08.583719 : 
+The above exception was the direct cause of the following exception:
+
+
+2024-07-18 10:53:08.583719 : 
+2024-07-18 10:53:08.583719 : Traceback (most recent call last):
+
+2024-07-18 10:53:08.583719 : 
+2024-07-18 10:53:08.584788 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:53:08.584788 : 
+2024-07-18 10:53:08.584788 :   File "C:\Isles\air quality\src\cleanup.py", line 103, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+
+2024-07-18 10:53:08.584788 : 
+2024-07-18 10:53:08.584788 :   File "C:\Isles\air quality\src\graphing.py", line 89, in lineGraphDotted
+    plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+
+2024-07-18 10:53:08.585496 : 
+2024-07-18 10:53:08.585496 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\pyplot.py", line 3708, in plot
+    return gca().plot(
+           ^^^^^^^^^^^
+
+2024-07-18 10:53:08.585635 : 
+2024-07-18 10:53:08.585635 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_axes.py", line 1781, in plot
+    self.add_line(line)
+
+2024-07-18 10:53:08.585635 : 
+2024-07-18 10:53:08.585635 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2311, in add_line
+    self._update_line_limits(line)
+
+2024-07-18 10:53:08.585635 : 
+2024-07-18 10:53:08.585635 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2334, in _update_line_limits
+    path = line.get_path()
+           ^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.585635 : 
+2024-07-18 10:53:08.585635 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 1037, in get_path
+    self.recache()
+
+2024-07-18 10:53:08.585635 : 
+2024-07-18 10:53:08.585635 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\lines.py", line 673, in recache
+    xconv = self.convert_xunits(self._xorig)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.586650 : 
+2024-07-18 10:53:08.586650 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\artist.py", line 279, in convert_xunits
+    return ax.xaxis.convert_units(x)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:53:08.586650 : 
+2024-07-18 10:53:08.586650 :   File "C:\Isles\air quality\venv\Lib\site-packages\matplotlib\axis.py", line 1806, in convert_units
+    raise munits.ConversionError('Failed to convert value(s) to axis '
+
+2024-07-18 10:53:08.586650 : 
+2024-07-18 10:53:08.586650 : matplotlib.units.ConversionError: Failed to convert value(s) to axis units: array([Timestamp('2024-06-04 19:00:00'), 13.0], dtype=object)
+
+2024-07-18 10:53:08.586650 : 
+2024-07-18 10:54:25.039727 : Starting utility...
+2024-07-18 10:54:25.039727 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:54:25.043301 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:54:25.077402 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:54:25.353107 : OpenAQ entries documented: 336
+2024-07-18 10:54:25.355941 : OpenAQ API query found entries: 335
+2024-07-18 10:54:26.173548 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:54:26.183310 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:54:26.603253 : OpenAQ entries documented: 336
+2024-07-18 10:54:26.603253 : OpenAQ API query found entries: 335
+2024-07-18 10:54:27.388417 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:54:27.390489 : Success!
+2024-07-18 10:54:27.390489 : All generated graphs can be found in the 'output' folder.
+2024-07-18 10:54:27.398615 : Deleting temp files...
+2024-07-18 10:55:38.905465 : Starting utility...
+2024-07-18 10:55:38.905465 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:55:38.919402 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:55:38.945320 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:55:39.349785 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-07-18 10:55:39.353831 : Traceback (most recent call last):
+
+2024-07-18 10:55:39.353831 : 
+2024-07-18 10:55:39.353831 :   File "C:\Isles\air quality\src\gui.py", line 134, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+
+2024-07-18 10:55:39.353831 : 
+2024-07-18 10:55:39.353831 :   File "C:\Isles\air quality\src\cleanup.py", line 101, in makeCleanGraph
+    data, publicList = hourlyAverage(fp, period, average_block)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:55:39.353831 : 
+2024-07-18 10:55:39.353831 :   File "C:\Isles\air quality\src\cleanup.py", line 76, in hourlyAverage
+    publicList = publicdata.getOpenAQ("day", str(mostRecentStamp), str(earliestStamp))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:55:39.353831 : 
+2024-07-18 10:55:39.353831 :   File "C:\Isles\air quality\src\publicdata.py", line 40, in getOpenAQ
+    timeList.append(datetime.datetime.fromisoformat(time))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+2024-07-18 10:55:39.359277 : 
+2024-07-18 10:55:39.359277 : TypeError: fromisoformat: argument must be str
+
+2024-07-18 10:55:39.359277 : 
+2024-07-18 10:56:42.084255 : Starting utility...
+2024-07-18 10:56:42.084255 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-18 10:56:42.104130 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-18 10:56:42.126649 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:56:42.384105 : OpenAQ entries documented: 14
+2024-07-18 10:56:42.384105 : OpenAQ API query found entries: >14
+2024-07-18 10:56:43.157429 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-18 10:56:43.160090 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:56:43.514041 : OpenAQ entries documented: 14
+2024-07-18 10:56:43.514041 : OpenAQ API query found entries: >14
+2024-07-18 10:56:44.260576 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-18 10:56:44.262656 : Success!
+2024-07-18 10:56:44.262656 : All generated graphs can be found in the 'output' folder.
+2024-07-18 10:56:44.272558 : Deleting temp files...

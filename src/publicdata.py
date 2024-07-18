@@ -2,6 +2,9 @@ import dateutil.parser
 import requests
 import dateutil
 from pytimeparse import parse
+import datetime
+import json
+import pandas
 
 
 
@@ -25,18 +28,25 @@ def getOpenAQ(temporal, date_to, date_from):
 
         }
 
-    res = requests.get(url, headers=headers)
+    try:
+        res = requests.get(url, headers=headers)
 
-    timeList = []
-    valueList = []
-    for entry in res.json()["results"]:
-        time = entry["hour"]
-        value = entry["average"]
+        timeList = []
+        valueList = []
+        for entry in res.json()["results"]:
+            time = entry[temporal]
+            value = entry["average"]
 
-        timeList.append(time)
-        valueList.append(value)
+            timeList.append(datetime.datetime.fromisoformat(time))
+            valueList.append(value)
 
-    print(f"OpenAQ entries documented: {limit}")
-    print(f"OpenAQ API query found entries: " + str(res.json()["meta"]["found"])) #if 0, then warn and abort
+        print(f"OpenAQ entries documented: {limit}")
+        print(f"OpenAQ API query found entries: " + str(res.json()["meta"]["found"])) #if 0, then warn and abort
+    except KeyError:
+        print(json.dumps(res.json(), indent=4))
+        raise Exception("Got bad data from OpenAQ API...")
+        
 
-    return timeList, valueList
+    return (timeList, valueList)
+
+

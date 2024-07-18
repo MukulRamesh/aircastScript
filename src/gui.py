@@ -77,6 +77,16 @@ ttk.Checkbutton(root,
                 offvalue=False).pack()
 
 
+getOpenAQTKVar = tk.BooleanVar()
+
+ttk.Checkbutton(root,
+                text='Outside Air Quality Inclusion (Should I also graph outside air quality in Trenton?)',
+                variable=getOpenAQTKVar,
+                onvalue=True,
+                offvalue=False).pack()
+
+getOpenAQTKVar.set(True)
+
 
 fullFilePaths = []
 
@@ -139,7 +149,7 @@ def runUtility():
             updateLabelText("Opening output folder...")
             root.destroy()
         except Exception as e:
-            print(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr)
+            print(f"Config options: {periodLengthStr}, {averageLengthStr}, {intervalLengthStr}, {dotIntervalLengthStr}, {includeTitle}")
             boxText.set("An problem occurred. Please quit, and see log file for more details.")
             traceback.print_exception(e, file=sys.stdout)
 
