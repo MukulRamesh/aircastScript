@@ -47,7 +47,7 @@ def lineGraphDotted(name, data, interval, dotInterval, includeTitle, publicLists
 
 	if includeTitle:
 		goodName = name.split("_")[0]
-		fig.suptitle(goodName)
+		fig.suptitle(goodName, fontsize=25)
 
 	x = [d[0] for d in data]
 	y = [d[1] for d in data]
@@ -82,8 +82,9 @@ def lineGraphDotted(name, data, interval, dotInterval, includeTitle, publicLists
 	publicTime = publicLists[0]
 	publicVal = publicLists[1]
 
-	plt.plot(x,y, linewidth=2.0, color="black") # plot line
-	plt.plot(publicTime, publicVal, linewidth=1.0, color="grey")
+	plt.plot(x,y, linewidth=2.0, color="black", label="Indoor") # plot line
+	plt.plot(publicTime, publicVal, linewidth=1.0, color="grey", label="Outdoor", linestyle="dashed")
+	plt.legend(fontsize=15)
 	
 	# try:
 	# except:

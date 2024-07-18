@@ -69,7 +69,6 @@ dotIntervalLengthDropDown = tk.OptionMenu(root, dotIntervalLengthText, *dotInter
 
 
 titleTKVar = tk.BooleanVar()
-
 ttk.Checkbutton(root,
                 text='Title Inclusion (Should I title each graph?)',
                 variable=titleTKVar,
@@ -78,13 +77,11 @@ ttk.Checkbutton(root,
 
 
 getOpenAQTKVar = tk.BooleanVar()
-
 ttk.Checkbutton(root,
                 text='Outside Air Quality Inclusion (Should I also graph outside air quality in Trenton?)',
                 variable=getOpenAQTKVar,
                 onvalue=True,
                 offvalue=False).pack()
-
 getOpenAQTKVar.set(True)
 
 
