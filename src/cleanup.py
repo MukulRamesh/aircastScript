@@ -1,4 +1,3 @@
-import os, shutil
 from os import listdir
 import csv
 import datetime
