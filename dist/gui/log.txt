@@ -1,0 +1,16 @@
+2024-07-31 10:31:57.885140 : Starting utility...
+2024-07-31 10:31:57.886063 : Unzipping C:/Isles/air quality/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-07-31 10:31:57.921035 : Unzipping C:/Isles/air quality/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-07-31 10:31:57.953972 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-31 10:31:58.134032 : Sending OpenAQ API request...
+2024-07-31 10:31:58.336810 : OpenAQ entries documented: 17
+2024-07-31 10:31:58.336810 : OpenAQ API query found entries: >17
+2024-07-31 10:31:59.425204 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-07-31 10:31:59.426202 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-31 10:31:59.597954 : Sending OpenAQ API request...
+2024-07-31 10:31:59.800901 : OpenAQ entries documented: 17
+2024-07-31 10:31:59.800901 : OpenAQ API query found entries: >17
+2024-07-31 10:32:00.685101 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-07-31 10:32:00.685101 : Success!
+2024-07-31 10:32:00.686101 : All generated graphs can be found in the 'output' folder.
+2024-07-31 10:32:00.693032 : Deleting temp files...
