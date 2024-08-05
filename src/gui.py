@@ -1,4 +1,5 @@
 # pyinstaller ./src/gui.py --add-data="C:\Isles\air quality\venv\Lib\site-packages\tkinterDnD\*;."
+# pyinstaller ./src/gui.py --add-data="D:\Isles\airCast\venv\Lib\site-packages\tkinterDnD\*;."
 
 import tkinter as tk
 from tkinter import ttk
