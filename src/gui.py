@@ -100,12 +100,7 @@ def drop(event):
     if (len(fullFilePaths) == 0):
         clearLabelText()
 
-    paths = str(event.data)
-
-    if "} {" in paths:
-        splitPath = paths.split("} {")
-    else:
-        splitPath = paths.split(" ")
+    splitPath = root.tk.splitlist(event.data)
 
     for path in splitPath:
         path = path.removeprefix("{").removesuffix("}")

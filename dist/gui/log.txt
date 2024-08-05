@@ -14,3 +14,19 @@
 2024-07-31 10:32:00.685101 : Success!
 2024-07-31 10:32:00.686101 : All generated graphs can be found in the 'output' folder.
 2024-07-31 10:32:00.693032 : Deleting temp files...
+2024-08-05 10:25:20.896390 : Starting utility...
+2024-08-05 10:25:20.896390 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-05 10:25:20.919395 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-08-05 10:25:20.980052 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-05 10:25:21.134579 : Sending OpenAQ API request...
+2024-08-05 10:25:21.451344 : OpenAQ entries documented: 17
+2024-08-05 10:25:21.451883 : OpenAQ API query found entries: >17
+2024-08-05 10:25:22.471286 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-05 10:25:22.471788 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:25:22.617814 : Sending OpenAQ API request...
+2024-08-05 10:25:22.812062 : OpenAQ entries documented: 17
+2024-08-05 10:25:22.812542 : OpenAQ API query found entries: >17
+2024-08-05 10:25:23.582477 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:25:23.582477 : Success!
+2024-08-05 10:25:23.582477 : All generated graphs can be found in the 'output' folder.
+2024-08-05 10:25:23.586956 : Deleting temp files...

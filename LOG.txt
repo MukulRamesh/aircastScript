@@ -2083,3 +2083,40 @@ The above exception was the direct cause of the following exception:
 2024-07-18 13:32:07.046889 : Success!
 2024-07-18 13:32:07.046889 : All generated graphs can be found in the 'output' folder.
 2024-07-18 13:32:07.051914 : Deleting temp files...
+2024-08-05 10:39:29.247034 : Starting utility...
+2024-08-05 10:39:29.247533 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-05 10:39:29.273034 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:39:29.439033 : Sending OpenAQ API request...
+2024-08-05 10:39:29.740725 : OpenAQ entries documented: 17
+2024-08-05 10:39:29.741223 : OpenAQ API query found entries: >17
+2024-08-05 10:39:30.734981 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:39:30.735462 : Success!
+2024-08-05 10:39:30.735462 : All generated graphs can be found in the 'output' folder.
+2024-08-05 10:39:30.740961 : Deleting temp files...
+2024-08-05 10:39:54.323792 : ['D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip']
+2024-08-05 10:40:07.839241 : ['D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip']
+2024-08-05 10:40:11.439798 : ['D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip', 'D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip']
+2024-08-05 10:40:55.911993 : D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-08-05 10:40:55.911993 : ['D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip']
+2024-08-05 10:41:04.346400 : D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-05 10:41:04.346901 : ['D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip', 'D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip']
+2024-08-05 10:41:32.046155 : <class 'str'>
+2024-08-05 10:47:02.051544 : ('D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip',)
+2024-08-05 10:47:08.722017 : ('D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip', 'D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip')
+2024-08-05 10:47:13.014229 : Starting utility...
+2024-08-05 10:47:13.014229 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-05 10:47:13.036231 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-05 10:47:13.060737 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-08-05 10:47:13.082730 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-05 10:47:13.224241 : Sending OpenAQ API request...
+2024-08-05 10:47:13.609923 : OpenAQ entries documented: 17
+2024-08-05 10:47:13.610423 : OpenAQ API query found entries: >17
+2024-08-05 10:47:14.359456 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-05 10:47:14.359924 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:47:14.531358 : Sending OpenAQ API request...
+2024-08-05 10:47:14.729380 : OpenAQ entries documented: 17
+2024-08-05 10:47:14.729882 : OpenAQ API query found entries: >17
+2024-08-05 10:47:15.500879 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-05 10:47:15.501380 : Success!
+2024-08-05 10:47:15.501380 : All generated graphs can be found in the 'output' folder.
+2024-08-05 10:47:15.505881 : Deleting temp files...
