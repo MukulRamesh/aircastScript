@@ -2120,3 +2120,50 @@ The above exception was the direct cause of the following exception:
 2024-08-05 10:47:15.501380 : Success!
 2024-08-05 10:47:15.501380 : All generated graphs can be found in the 'output' folder.
 2024-08-05 10:47:15.505881 : Deleting temp files...
+2024-08-24 18:33:35.820197 : Starting utility...
+2024-08-24 18:33:35.820697 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-24 18:33:35.896467 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:33:36.050935 : Sending OpenAQ API request...
+2024-08-24 18:33:36.376246 : OpenAQ entries documented: 17
+2024-08-24 18:33:36.376759 : OpenAQ API query found entries: >17
+2024-08-24 18:33:37.627926 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:33:37.627926 : Success!
+2024-08-24 18:33:37.627926 : All generated graphs can be found in the 'output' folder.
+2024-08-24 18:33:37.633917 : Deleting temp files...
+2024-08-24 18:37:31.141709 : Starting utility...
+2024-08-24 18:37:31.142209 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-24 18:37:31.171701 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:37:31.339209 : Sending OpenAQ API request...
+2024-08-24 18:37:31.569378 : OpenAQ entries documented: 17
+2024-08-24 18:37:31.569378 : OpenAQ API query found entries: >17
+2024-08-24 18:37:32.534551 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:37:32.534551 : Success!
+2024-08-24 18:37:32.535033 : All generated graphs can be found in the 'output' folder.
+2024-08-24 18:37:32.540023 : Deleting temp files...
+2024-08-24 18:37:55.974467 : Starting utility...
+2024-08-24 18:37:55.974467 : Unzipping D:/Isles/airCast/zips/sessions_2024061818195520240618-1924516-1ck9a79.zip
+2024-08-24 18:37:55.999966 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:37:56.162974 : Config options: 2 Weeks, 1 Hour, 1 Day, 12 Hours, False
+2024-08-24 18:37:56.164468 : Traceback (most recent call last):
+
+2024-08-24 18:37:56.164468 : 
+2024-08-24 18:37:56.164468 :   File "D:\Isles\airCast\src\gui.py", line 139, in runUtility
+    cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle, includeOpenAQ)
+
+2024-08-24 18:37:56.164967 : 
+2024-08-24 18:37:56.164967 :   File "D:\Isles\airCast\src\cleanup.py", line 108, in makeCleanGraph
+    graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList, includeOpenAQ)
+
+2024-08-24 18:37:56.165468 : 
+2024-08-24 18:37:56.165468 : UnboundLocalError: local variable 'publicList' referenced before assignment
+
+2024-08-24 18:37:56.165468 : 
+2024-08-24 18:39:33.752899 : Starting utility...
+2024-08-24 18:39:33.752899 : Unzipping D:/Isles/airCast/zips/sessions_2024061818191920240618-1924516-9bdwqn.zip
+2024-08-24 18:39:33.888302 : Reformatted isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-24 18:39:34.918661 : Graphed isles-perrine-mh_1880862__20240618-1924516-1j9qgw5.csv
+2024-08-24 18:39:34.919162 : Reformatted isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:39:35.904436 : Graphed isles-state-ms_1878651__20240618-1924516-1vjgvjz.csv
+2024-08-24 18:39:35.904930 : Success!
+2024-08-24 18:39:35.905430 : All generated graphs can be found in the 'output' folder.
+2024-08-24 18:39:35.912429 : Deleting temp files...

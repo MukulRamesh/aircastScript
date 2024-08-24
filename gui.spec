@@ -5,7 +5,7 @@ a = Analysis(
     ['src\\gui.py'],
     pathex=[],
     binaries=[],
-    datas=[('C:\\Isles\\air quality\\venv\\Lib\\site-packages\\tkinterDnD\\*', '.')],
+    datas=[('D:\\Isles\\airCast\\venv\\Lib\\site-packages\\tkinterDnD', 'tkinterDnD')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

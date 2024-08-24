@@ -39,7 +39,7 @@ def lineGraph(name, data):
 
 	plt.close(fig)
 
-def lineGraphDotted(name, data, interval, dotInterval, includeTitle, publicLists):
+def lineGraphDotted(name, data, interval, dotInterval, includeTitle, publicLists, includeOpenAQ):
 
 	fig = figure(figsize=(15, 12), dpi=300)
 
@@ -79,13 +79,15 @@ def lineGraphDotted(name, data, interval, dotInterval, includeTitle, publicLists
 	yRange = [0, max(max(y) + 30, 70)]
 	ax.set_ylim(yRange)
 
-	publicTime = publicLists[0]
-	publicVal = publicLists[1]
 
 	plt.plot(x,y, linewidth=2.0, color="black", label="Indoor") # plot line
-	plt.plot(publicTime, publicVal, linewidth=1.0, color="grey", label="Outdoor", linestyle="dashed")
+
+	if includeOpenAQ:
+		publicTime = publicLists[0]
+		publicVal = publicLists[1]
+		plt.plot(publicTime, publicVal, linewidth=1.0, color="grey", label="Outdoor", linestyle="dashed")
 	plt.legend(fontsize=15)
-	
+
 	# try:
 	# except:
 	# 	print(x[0])

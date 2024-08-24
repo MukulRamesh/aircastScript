@@ -14,7 +14,7 @@ DIR = "./temp/"
 # Hard coded field names because the CSV file is badly formatted
 fieldNames = ['ObjectID', 'Session_Name', 'Timestamp', 'Latitude', 'Longitude', 'Fahrenheit', 'PM1', 'PM10', 'PM2.5', '3-RH']
 
-def hourlyAverage(fp, PERIOD, TICKER):
+def hourlyAverage(fp, PERIOD, TICKER, includeOpenAQ):
 
 	file = csv.DictReader(fp, delimiter=',', quotechar="'", fieldnames=fieldNames)
 	lis = []
@@ -71,13 +71,15 @@ def hourlyAverage(fp, PERIOD, TICKER):
 		averagedList.append((markedStamp, averagePPM))
 
 
-
-	publicList = publicdata.getOpenAQ("day", str(mostRecentStamp), str(earliestStamp))
+	if includeOpenAQ:
+		publicList = publicdata.getOpenAQ("day", str(mostRecentStamp), str(earliestStamp))
+	else:
+		publicList = None
 
 	return averagedList, publicList
 
 
-def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle):
+def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle, includeOpenAQ):
 	entries = listdir(DIR)
 	period = datetime.timedelta(seconds=parse(periodLengthStr))
 	average_block = datetime.timedelta(seconds=parse(averageLengthStr))
@@ -86,7 +88,7 @@ def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotInte
 	interval = int(parse(intervalLengthStr) / 3600)
 	dotInterval = int(parse(dotIntervalLengthStr) / 3600)
 
-	
+
 
 	for entry in entries: # I assume that every zip file has only one point of interest: the .csv
 		if entry.endswith(".csv"):
@@ -97,9 +99,10 @@ def makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotInte
 				next(fp)
 
 			print("Reformatted " + entry)
-			data, publicList = hourlyAverage(fp, period, average_block)
 
-			graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList)
+			data, publicList = hourlyAverage(fp, period, average_block, includeOpenAQ) #if includeOpenAQ == TRUE, then, publicList == None
+
+			graphing.lineGraphDotted(entry, data, interval, dotInterval, includeTitle, publicList, includeOpenAQ)
 			print("Graphed " + entry)
 			fp.close()
 

@@ -1,5 +1,7 @@
 # pyinstaller ./src/gui.py --add-data="C:\Isles\air quality\venv\Lib\site-packages\tkinterDnD\*;."
 # pyinstaller ./src/gui.py --add-data="D:\Isles\airCast\venv\Lib\site-packages\tkinterDnD\*;."
+# pyinstaller ./src/gui.py --hidden-import tkdnd --noconfirm
+# pyinstaller ./src/gui.py --add-data="D:\Isles\airCast\venv\Lib\site-packages\tkinterDnD;tkinterDnD" --noconfirm
 
 import tkinter as tk
 from tkinter import ttk
@@ -129,12 +131,14 @@ def runUtility():
         intervalLengthStr = intervalLengthText.get()
         dotIntervalLengthStr = dotIntervalLengthText.get()
         includeTitle = titleTKVar.get()
+        includeOpenAQ = getOpenAQTKVar.get()
+
         updateLabelText("Grabbed configured options...")
 
         try:
             unzip.unzipList(fullFilePaths)
             updateLabelText("Unzipped files...")
-            cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle)
+            cleanup.makeCleanGraph(periodLengthStr, averageLengthStr, intervalLengthStr, dotIntervalLengthStr, includeTitle, includeOpenAQ)
             updateLabelText("Generated graphs...")
             unzip.deleteTempFiles()
             updateLabelText("Deleted temporary files...")
